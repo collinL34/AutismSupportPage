@@ -10,7 +10,6 @@ class CreateUsers < ActiveRecord::Migration[5.0]
       t.string   :city
       t.string   :state
       t.integer  :apt
-      t.string   :images
       t.string   :bio
 
       t.timestamps
