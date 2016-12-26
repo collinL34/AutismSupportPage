@@ -3,6 +3,6 @@ rvm:
 - 2.3.1
 cache: bundler
 before_install:
-  - "psql -c 'create database db/test;' -U postgres"
-  - "psql -U postgres -q -d <dbname> -f db/structure.sql"
-- "cp config/database.yml.travis config/database.yml"
+  - "psql -c 'create database AutismApp_test;' -U postgres"
+  - "psql -U postgres -q -d AutismApp_test -f db/structure.sql"
+  - "cp config/database.yml.travis config/database.yml"
