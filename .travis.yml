@@ -3,7 +3,7 @@ rvm:
   - 2.3.1
 cache: bundler
 before_script:
-  - cp config/database.travis.yml config/database.yml
+  - cp .travis.yml config/database.yml
   - psql -c 'create database AutismApp_test;' -U postgres
   - bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare --trace
