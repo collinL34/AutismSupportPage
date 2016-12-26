@@ -207,3 +207,46 @@ Migrating to CreateFriendships (20161226191317)
   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(4447675893503011260)[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "email", "password_digest", "address", "city", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "admin"], ["email", "c@c.com"], ["password_digest", "$2a$10$yfjR1ELy9xEcdM7BQLIAv.FJR/HpVm1qH89x32i72jhKDdemquZaC"], ["address", "367 at blah ave"], ["city", "berkeley"], ["state", "CA"], ["created_at", 2016-12-26 19:28:42 UTC], ["updated_at", 2016-12-26 19:28:42 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "email", "password_digest", "address", "city", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "friend"], ["email", "c@c.com"], ["password_digest", "$2a$10$3M1phJM5Da8YCvePn.wEduGGvCgmOUgenJfpa9rMq0u1rmwCsf7IC"], ["address", "367 at blah ave"], ["city", "berkeley"], ["state", "CA"], ["created_at", 2016-12-26 19:28:42 UTC], ["updated_at", 2016-12-26 19:28:42 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Test"], ["created_at", 2016-12-26 19:28:42 UTC], ["updated_at", 2016-12-26 19:28:42 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "articles" ("body", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "this is my test article aint it so great"], ["category_id", 1], ["created_at", 2016-12-26 19:28:42 UTC], ["updated_at", 2016-12-26 19:28:42 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "images" ("link", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["link", "../images/autism.png"], ["created_at", 2016-12-26 19:28:42 UTC], ["updated_at", 2016-12-26 19:28:42 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("body", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "this is my test post body aint it so great"], ["author_id", 1], ["created_at", 2016-12-26 19:28:42 UTC], ["updated_at", 2016-12-26 19:28:42 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "email", "password_digest", "address", "city", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "admin"], ["email", "c@c.com"], ["password_digest", "$2a$10$m92/qpUsW3RG/ivPw9PEy.z8CVdAMhTpa23bnla5f3Qxu4aHcBvRO"], ["address", "367 at blah ave"], ["city", "berkeley"], ["state", "CA"], ["created_at", 2016-12-26 19:28:55 UTC], ["updated_at", 2016-12-26 19:28:55 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "email", "password_digest", "address", "city", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "friend"], ["email", "c@c.com"], ["password_digest", "$2a$10$SmwZxEdDIGlHz6UJyHp8xuP2d/sXfRt0049mG2htukAqUbmRB5ifK"], ["address", "367 at blah ave"], ["city", "berkeley"], ["state", "CA"], ["created_at", 2016-12-26 19:28:55 UTC], ["updated_at", 2016-12-26 19:28:55 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Test"], ["created_at", 2016-12-26 19:28:55 UTC], ["updated_at", 2016-12-26 19:28:55 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("body", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "this is my test article aint it so great"], ["category_id", 1], ["created_at", 2016-12-26 19:28:55 UTC], ["updated_at", 2016-12-26 19:28:55 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "images" ("link", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["link", "../images/autism.png"], ["created_at", 2016-12-26 19:28:55 UTC], ["updated_at", 2016-12-26 19:28:55 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("body", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "this is my test post body aint it so great"], ["author_id", 1], ["created_at", 2016-12-26 19:28:55 UTC], ["updated_at", 2016-12-26 19:28:55 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "friendships" ("user_id", "friends_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["friends_id", 2], ["created_at", 2016-12-26 19:28:55 UTC], ["updated_at", 2016-12-26 19:28:55 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "friendships"[0m
