@@ -15,5 +15,5 @@ script:
   - bundle exec rake
 
 before_script:
-  - cp config/database.yml.travis config/database.yml
+  - cp config/database.yml
   - psql -c 'create database AutismApp_test;' -U postgres
