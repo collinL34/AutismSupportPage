@@ -25,7 +25,7 @@ App Tech Stack
   - AngularJs (front-end (?))
   - PostGres
   - Heroku 
-  - Travis Ci (possible)
+  - Travis Ci
   - Javascript
   - Html 5 && css 3
   - Bootstrap 4
