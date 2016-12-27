@@ -8,7 +8,7 @@ cache: bundler
 script:
   # - RAILS-ENV=test bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare
-  - rspec
+  - bundle exec rspec
 services:
   - posgresql
 before_script:
