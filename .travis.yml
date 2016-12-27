@@ -1,16 +1,15 @@
 language: ruby
 rvm:
   - 2.3.1
+
 env:
-  - DB=pgsql
-services:
-  - postgresql
-
+  - DB:postgresql
+cache: bundler
 script:
-  - RAILS_ENV=test bundle exec rake db:migrate --trace
+  # - RAILS-ENV=test bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare
-  - bundle exec rake
-
+  - bundle exec rspec
+services:
+  - posgresql
 before_script:
-  - cp config/database.yml
-  - psql -c 'create database AutismApp_test;' -U postgres
+- psql -c 'create database travis_ci_test;' -U postgres
