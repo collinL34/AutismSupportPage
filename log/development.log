@@ -319,3 +319,31 @@ Migrating to CreateFriendships (20161226191317)
   [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 1]]
   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" ORDER BY "categories"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
   [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" ASC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (20.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (7.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "heather"], ["email", "h@g.com"], ["password_digest", "$2a$10$gFs5N5Pw2EHty8NFlCe9dO4QKW9YokiRXkMXZFzbEhL6Yl8EgT5bG"], ["created_at", 2016-12-27 22:33:34 UTC], ["updated_at", 2016-12-27 22:33:34 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1[0m  [["user_id", 6]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (8.2ms)[0m  [1m[32mINSERT INTO "friendships" ("user_id", "friend_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 6], ["friend_id", 1], ["created_at", 2016-12-27 22:34:50 UTC], ["updated_at", 2016-12-27 22:34:50 UTC]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mFriendship Load (0.2ms)[0m  [1m[34mSELECT "friendships".* FROM "friendships" WHERE "friendships"."user_id" = $1[0m  [["user_id", 6]]
+  [1m[36mFriendship Load (0.3ms)[0m  [1m[34mSELECT "friendships".* FROM "friendships" WHERE "friendships"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = $1[0m  [["author_id", 1]]
+  [1m[36mImage Load (1.8ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."owner_id" = $1[0m  [["owner_id", 1]]
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 1], ["commentable_type", "User"]]
+  [1m[36mImage Load (1.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" ORDER BY "images"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" ORDER BY "comments"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments"[0m
