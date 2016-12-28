@@ -4,11 +4,11 @@ rvm:
 
 env:
   - DB:postgresql
-# cache: bundler
+cache: bundler
 script:
   # - RAILS-ENV=test bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare
-  - bundle exec rspec spec/
+  - bundle exec rspec
 
 services:
   - posgresql
