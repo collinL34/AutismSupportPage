@@ -6,6 +6,7 @@ User.create(first_name: 'friend', last_name: nil, email: 'c@c.com',
             state: 'CA', password: 'p')
 Category.create(name: 'Test')
 Article.create(body:'this is my test article aint it so great', category_id: 1)
+Article.create()
 Image.create(link: "../images/autism.png")
 Post.create(body: 'this is my test post body aint it so great', author_id: 1)
 Friendship.create(user_id: 1, friends_id: 2)
