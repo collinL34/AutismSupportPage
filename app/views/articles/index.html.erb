@@ -6,7 +6,7 @@
   <div class="ui container">
     <%=link_to 'Home', :back, class: 'item'%>
     <a class="item">
-      <i class="grid layout icon"></i> Browse
+      <i class="grid layout icon"></i> Browse Articles
     </a>
     <a class="item">
       <i class="mail icon"></i> Messages
@@ -31,3 +31,9 @@
   </div>
   </div>
 </div>
+
+<ul> <% @articles.each do |article| %>
+  <li> <%= article.body %> </li>
+  <li> <%= article.link %> </li>
+  <p>hey</p>
+</ul> <% end %>
