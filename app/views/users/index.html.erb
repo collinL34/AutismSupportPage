@@ -1,4 +1,8 @@
-<div class="ui attached stackable menu">
+<div id='navbar'>
+  <div>
+    <h2 class='headers'><i>Autism Talks</i></h2>
+  </div>
+  <div class="ui attached stackable menu">
   <div class="ui container">
     <%=link_to 'Home', :back, class: 'item'%>
     <a class="item">
@@ -17,8 +21,13 @@
       </div>
     </div>
     <div class="right item">
-      <div class="ui input"><input placeholder="Search..." type="text"></div>
-      <div class="ui input"><input placeholder="Search" type="submit"></div>
+      <div class="ui search">
+          <div class="ui icon input">
+            <input class="prompt" placeholder="Common passwords..." type="text">
+            <i class="search icon"></i>
+          </div>
+      <div class="results"></div>
     </div>
+  </div>
   </div>
 </div>
