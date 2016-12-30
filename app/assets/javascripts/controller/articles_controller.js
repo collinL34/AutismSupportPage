@@ -1,7 +1,6 @@
-var app = angular.module('angularRails', ['$scope']);
+// var app = angular.module('angularRails', ['$scope']);
 
-app.directive('articles-list', function($scope) {
-    $scope.addArticle = function() {
-        
-    };
-});
+// app.directive('articles-list', function($scope) {
+//     $scope.addArticle = function() {
+//     };
+// });
