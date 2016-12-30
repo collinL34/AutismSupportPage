@@ -1,39 +1,14 @@
-<div id='navbar'>
-  <div>
-    <h2 class='headers'><i>Autism Talks</i></h2>
-  </div>
-  <div class="ui attached stackable menu">
-  <div class="ui container">
-    <%=link_to 'Home', :back, class: 'item'%>
-    <a class="item">
-      <i class="grid layout icon"></i> Browse Articles
-    </a>
-    <a class="item">
-      <i class="mail icon"></i> Messages
-    </a>
-    <div class="ui simple dropdown item">
-      More
-      <i class="dropdown icon"></i>
-      <div class="menu">
-        <a class="item"><i class="edit icon"></i> Edit Profile</a>
-        <a class="item"><i class="globe icon"></i> Choose Language</a>
-        <a class="item"><i class="settings icon"></i> Account Settings</a>
-      </div>
+<div class="container-fluid" ng-app="angularRails">
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h1 ng-if="name">Hello, {{name}}</h1>
+    <div class="panel-body">
+      <form class="form-inline">
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="Enter your name" autofocus ng-model="name">
+        </div>
+      </form>
     </div>
-    <div class="right item">
-      <div class="ui search">
-          <div class="ui icon input">
-            <input class="prompt" placeholder="Common passwords..." type="text">
-            <i class="search icon"></i>
-          </div>
-      <div class="results"></div>
-    </div>
-  </div>
   </div>
 </div>
-
-<ul> <% @articles.each do |article| %>
-  <li> <%= article.body %> </li>
-  <li> <%= article.link %> </li>
-  <p>hey</p>
-</ul> <% end %>
+   
