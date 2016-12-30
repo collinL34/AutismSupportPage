@@ -17,8 +17,10 @@ ActiveRecord::Schema.define(version: 20161226191317) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "body"
-    t.integer  "category_id"
     t.integer  "comment_id"
+    t.integer  "category_id"
+    t.integer  "author_id"
+    t.string   "link"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
@@ -73,7 +75,6 @@ ActiveRecord::Schema.define(version: 20161226191317) do
     t.string   "city"
     t.string   "state"
     t.integer  "apt"
-    t.string   "images"
     t.string   "bio"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false

@@ -9,7 +9,9 @@ script:
   # - RAILS-ENV=test bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare
   - bundle exec rspec
+
 services:
   - posgresql
+
 before_script:
 - psql -c 'create database travis_ci_test;' -U postgres
