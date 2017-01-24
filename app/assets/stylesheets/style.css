@@ -33,3 +33,29 @@ body,
         background-color: #1C2331;
     }
 }
+
+.description {
+    padding-top: 25%;
+    padding-bottom: 3rem;
+}
+
+@media (max-width: 992px) {
+    .description {
+        padding-top: 7rem;
+        text-align: center;
+    }
+}
+
+.card-block {
+    padding: 1.25rem;
+}
+
+.card {
+    position: relative;
+    margin-top: 100px;
+    height: 680px;
+}
+
+
+
+
