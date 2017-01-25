@@ -1,21 +1,17 @@
+
+/* YOUR CUSTOM STYLES */
+
 html,
 body,
 .view {
     height: 100%;
 }
-.full-bg-img {
-    position: absolute;
-}
-.full-bg-img, .view .content, .view .mask {
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
+
+/*Intro*/
+
 .view {
-    background: url("https://images.unsplash.com/photo-1481679115566-7aeae7543b52?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=")no-repeat center center fixed;
-    -webkit-background-size: cover;
+    background: url("http://mdbootstrap.com/images/regular/city/img%20(6).jpg")no-repeat center center fixed;
+        -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
@@ -28,6 +24,8 @@ body,
         position: relative;
     }
 }
+
+/* Navigation*/
 
 .navbar {
     background-color: transparent;
@@ -46,6 +44,7 @@ body,
 .description {
     padding-top: 25%;
     padding-bottom: 3rem;
+    color: #fff
 }
 
 @media (max-width: 992px) {
@@ -55,39 +54,62 @@ body,
     }
 }
 
+.fa-check {
+    color: green;
+}
+
+.full-bg-img {
+    position: absolute;
+}
+.full-bg-img, .view .content, .view .mask {
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.view {
+    background: url("https://images.unsplash.com/photo-1481679115566-7aeae7543b52?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .card-block {
     padding: 1.25rem;
 }
 
-.card {
+#home {
     position: relative;
     margin-top: 100px;
     height: 680px;
 }
 
-.mask {
-    background-color: white;
+.card img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
-.card-text {
-    background-color: black;
+.card img,
+.img-fluid,
+.section .view,
+.section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.full-bg-img {
+    position: absolute;
+}
+.full-bg-img, .view .content, .view .mask {
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
 
 
