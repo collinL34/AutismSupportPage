@@ -78,6 +78,7 @@ body,
 
 .card-block {
     padding: 1.25rem;
+    height: 330px;
 }
 
 #home {
@@ -112,4 +113,6 @@ body,
     width: 100%;
 }
 
-
+#icons-list {
+    padding-top: 40px;
+}
