@@ -81,7 +81,7 @@ body,
     height: 330px;
 }
 
-#home {
+.home-card {
     position: relative;
     margin-top: 100px;
     height: 680px;
