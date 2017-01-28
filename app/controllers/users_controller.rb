@@ -4,12 +4,14 @@ class UsersController < ApplicationController
   end
 
   def new
+    @user = User.new()
   end
 
   def show
   end
 
   def create
+    p 'hey there'
   end
 
   def update

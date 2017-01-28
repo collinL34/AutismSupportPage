@@ -1,7 +1,7 @@
 <!--First column-->
 <div class="col-lg-6">
     <div class="description">
-        <h2 class="h2-responsive wow fadeInLeft">Landing Page </h2>
+        <h2 class="h2-responsive wow fadeInLeft">Welcome to Autism Talks</h2>
         <hr class="hr-dark">
         <p class="wow fadeInLeft" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae, quisquam iste, maiores. Nulla.</p>
         <br>
@@ -29,18 +29,13 @@
 
             <!--Body-->
             <%= form_for @user, class: 'md-form' do |f| %>
+                <i class="fa fa-envelope prefix"></i>
                 <%= f.text_field :email, placeholder: 'Email', class: 'form-control'%>
-                <%= f.text_field :password, placeholder: 'password', class: 'form-control'%>
-            <% end%>
-            <div class="md-form">
                 <i class="fa fa-lock prefix"></i>
-                <input type="password" id="form4" class="form-control">
-                <label for="form4">Repeat password</label>
-            </div>
-
-            <div class="text-xs-center">
-                <button class="btn btn-primary btn-lg warning-color">Sign up</button>
-            </div>
+                <%= f.text_field :password, placeholder: 'password', class: 'form-control'%>
+                <%= f.text_field :password, placeholder: ' retype password', class: 'form-control'%>
+                <%= f.submit 'Sign up', class: "btn btn-primary btn-lg warning-color" %>
+            <% end%>
         </div>
     </div>
     <!--/.Form-->
