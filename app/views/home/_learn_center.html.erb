@@ -28,12 +28,10 @@
             </div>
 
             <!--Body-->
-            <div class="md-form">
-                <i class="fa fa-envelope prefix"></i>
-                <input type="text" id="form2" class="form-control">
-                <label for="form2">Your email</label>
-            </div>
-
+            <%= form_for @user, class: 'md-form' do |f| %>
+                <%= f.text_field :email, placeholder: 'Email', class: 'form-control'%>
+                <%= f.text_field :password, placeholder: 'password', class: 'form-control'%>
+            <% end%>
             <div class="md-form">
                 <i class="fa fa-lock prefix"></i>
                 <input type="password" id="form4" class="form-control">
