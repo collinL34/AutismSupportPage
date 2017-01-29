@@ -78,7 +78,7 @@ body,
     height: 330px;
 }
 
-.home-card {
+.new-card {
     position: relative;
     margin-top: 50px;
     height: 660px;
@@ -113,5 +113,13 @@ body,
 #icons-list {
     padding-top: 40px;
 }
+
+.new-button {
+    padding-top: 200px;
+}
+
+
+
+
 
 
