@@ -81,7 +81,7 @@ body,
 .home-card {
     position: relative;
     margin-top: 50px;
-    height: 600px;
+    height: 660px;
 }
 
 .card img {
@@ -113,3 +113,5 @@ body,
 #icons-list {
     padding-top: 40px;
 }
+
+

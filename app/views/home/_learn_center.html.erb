@@ -12,32 +12,10 @@
 
 <!--Second column-->
 <div class="col-lg-6">
-    <!--Form-->
     <div class="card wow fadeInRight home-card">
         <div class="card-block">
-            <!--Header-->
-            <div class="text-xs-center links">
-                <h3><i class="fa fa-user"></i> Register with:</h3>
-                <a href="" class="btn-floating btn-fb btn-small"><i class="fa fa-facebook"></i></a>
-                <a href="" class="btn-floating btn-tw btn-small danger-color"><i class="fa fa-twitter"></i></a>
-                <a href="" class="btn-floating btn-gplus btn-small info-color"><i class="fa fa-google-plus"></i></a>
-                <a href="" class="btn-floating btn-li btn-small yellow accent-4"><i class="fa fa-linkedin"></i></a>
-                <a href="" class="btn-floating btn-git btn-small success-color"><i class="fa fa-github"></i></a>
-                <hr>
-                <h3>or:</h3>
-            </div>
-
-            <!--Body-->
-            <%= form_for @user, class: 'md-form' do |f| %>
-                <i class="fa fa-envelope prefix"></i>
-                <%= f.text_field :email, placeholder: 'Email', class: 'form-control'%>
-                <i class="fa fa-lock prefix"></i>
-                <%= f.text_field :password, placeholder: 'password', class: 'form-control'%>
-                <%= f.text_field :password, placeholder: ' retype password', class: 'form-control'%>
-                <%= f.submit 'Sign up', class: "btn btn-primary btn-lg warning-color" %>
-            <% end%>
+            
         </div>
     </div>
-    <!--/.Form-->
 </div>
 <!--/Second column-->

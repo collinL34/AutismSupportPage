@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    p 'hey there'
+    @user  = User.new(params[:user_params])
   end
 
   def update
