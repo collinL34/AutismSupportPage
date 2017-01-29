@@ -114,9 +114,41 @@ body,
     padding-top: 40px;
 }
 
-.new-button {
-    padding-top: 200px;
+.home-card {
+    height: 200px;
+    width: 220px;
+    margin-top: 200px;
+    margin-left: 200px;
+    border-radius: 10px;
+    text-align: center;
 }
+
+.home-card p {
+    background-color: #ff4444;
+}
+
+.home-card button {
+    margin-top: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
