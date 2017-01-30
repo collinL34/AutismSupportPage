@@ -22,10 +22,10 @@ art7 = Article.create(category_id: 6, link: 'https://takesbrains.org/', author_i
 articles = [art1, art2, art3, art4, art5, art6, art7]
 
 articles.each do |article| 
-  nokogiri_obj    = Article.nokogiri_obj_makr(article.link)
-  article.title   = Article.title_grabber(nokogiri_obj) 
-  article.body    = Article.text_grabber(nokogiri_obj) 
-  article.image_tag = Article.img_grabber(nokogiri_obj)
+  nokogiri_obj       = Article.nokogiri_obj_makr(article.link)
+  article.title      = Article.title_grabber(nokogiri_obj) 
+  article.body       = Article.text_grabber(nokogiri_obj) 
+  article.image_link = Article.img_grabber(nokogiri_obj)
 end
 
 Friendship.create(user_id: 1, friend_id: 2)
