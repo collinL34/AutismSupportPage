@@ -19,7 +19,7 @@ class Article < ApplicationRecord
   end
 
   def self.text_grabber(html_doc)
-    white_space_cleaner(html_doc.css('p').text)
+    Article.white_space_cleaner(html_doc.css('p').first.text)
   end
 
 end
