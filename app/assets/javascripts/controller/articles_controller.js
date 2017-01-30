@@ -1,4 +1,4 @@
-var app = angular.module('angularRails', ['$scope']);
+const angular = angular.module('angularRails', []);
 
-app.directive('articles-list', function($scope) {
+angular.directive('articles-list', function($scope) {
 });
