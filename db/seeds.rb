@@ -19,5 +19,4 @@ Article.create(body: 'Well thought through  article', category_id: 2, link: 'htt
 Article.create(body:'Helpful article', category_id: 6, link: 'https://www.autismparentingmagazine.com/divorced-supporting-autism-child/', author_id: 1)
 
 Image.create(link: "../images/autism.png")
-Post.create(body: 'this is my test post body aint it so great', author_id: 1)
 Friendship.create(user_id: 1, friend_id: 2)
