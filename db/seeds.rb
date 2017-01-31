@@ -23,8 +23,7 @@ articles = [art1, art2, art3, art4, art5, art6, art7]
 
 articles.each do |article| 
   nokogiri_obj       = Article.nokogiri_obj_makr(article.link)
-  article.title      = Article.title_grabber(nokogiri_obj) 
-  article.body       = Article.text_grabber(nokogiri_obj) 
+  article.title      = Article.title_grabber(nokogiri_obj)
   article.image_link = Article.img_grabber(nokogiri_obj)
   article.save
 end
