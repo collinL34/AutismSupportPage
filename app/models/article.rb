@@ -12,7 +12,9 @@ class Article < ApplicationRecord
   end
 
   def self.img_grabber(html_doc)
-    html_doc.css('img').first['src']
+    imgs = html_doc.css('img')
+    img  = imgs.find { |imager| imager['src'].match(/https:/) }
+    return img['src']
   end
 
 end

@@ -2,3 +2,6 @@
 <footer class="page-footer center-on-small-only">
 </footer>
 <!--/.Footer-->
+<% @articles.each do |article|%>
+  <img src="<%= article.image_link%>">
+<%end%>
