@@ -1,4 +1,28 @@
-<div class='container'>
-  <p>Welcome New User to Your User Show Page Fuck Yeah America!!!!</p>
-  <img src="<%= @user%>">
+<!--Card-->
+<div class='container profile-container'>
+  <div class="card testimonial-card">
+
+      <!--Bacground color-->
+      <div class="card-up default-color-dark danger-color">
+      <p>Welcome <%=@user.first_name%> to your Profile Page </p>
+      </div>
+
+      <!--Avatar-->
+      <% if @user.profile_img %>
+        <div class="avatar"><img src="<%=@user.profile_img%>" class="rounded-circle img-responsive profile">
+      <%else%>
+        <%= form_for @user do |f| %>
+          <%= f.text_field :profile_img, placeholder: 'Image Link' %>
+        <% end %>
+      <% end %>
+      </div>
+
+      <div class="card-block">
+          <!--Name-->
+          <h4 class="card-title black-text"></i> <%= @user.first_name %></h4>
+          <hr>
+      </div>
+
+  </div>
+  <!--/.Card-->
 </div>

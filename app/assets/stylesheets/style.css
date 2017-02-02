@@ -4,16 +4,6 @@ body,
     height: 100%;
 }
 
-/*Intro*/
-
-.view {
-    background: url("http://mdbootstrap.com/images/regular/city/img%20(6).jpg")no-repeat center center fixed;
-        -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 @media (max-width: 768px) {
     .full-bg-img,
     .view {
@@ -98,7 +88,6 @@ body,
     height: auto;
 }
 
-
 .full-bg-img {
     position: absolute;
 }
@@ -135,11 +124,21 @@ body,
     text-align: center;
 }
 
+.profile {
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 460px;
+    width: 200px;
+    height: 200px;
+}
 
+.profile-container {
+    text-align: center;
+}
 
-
-
-
+.profile-card {
+    height: 100%;
+}
 
 
 
