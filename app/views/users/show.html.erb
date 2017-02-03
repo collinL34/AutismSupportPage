@@ -20,25 +20,11 @@
     
         </div>
 
-      <div class="card-block">
-          <!--Name-->
-          <h4 class="card-title black-text"></i> <%= @user.full_name() %></h4>
-          <hr>
-          <ul>
-            <li> <%= @user.email %> </li>
-            <li> <%= @user.address %> </li>
-            <li> <%= @user.state %> </li>
-            <li> <%= @user.zip_code %> </li>
+        <div class="divider-new">
+          <h2 class="h2-responsive wow fadeInDown">Friends</h2>
+        </div>
 
-            <% @user.friends.each do |friend| %>
-              <li> <%= friend.full_name %> </li>
-            <% end %>
-
-            <% @user.articles.each do |articles| %>
-              <li> <img src="<%= articles.image_link %>"> </li>
-            <% end %>
-          </ul>
-      </div>
+      <%= render :partial => 'friends_carousel' %>
 
   </div>
   <!--/.Card-->

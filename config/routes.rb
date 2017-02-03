@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :users
+  resources :users do 
+    resources :articles
+  end
   resources :articles
   resources :categories
   resources :sessions

@@ -141,7 +141,9 @@ body,
     height: 100%;
 }
 
-
+.carousel-item .testimonial-card {
+    height: 200px;
+}
 
 
 
