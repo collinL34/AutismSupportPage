@@ -10,4 +10,9 @@ class User < ApplicationRecord
   def profile_img=(img_link)
     write_attribute(:profile_img, img_link)
   end
+
+  def full_name()
+    "#{self.first_name} #{self.last_name}"
+  end
+
 end

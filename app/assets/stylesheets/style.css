@@ -12,8 +12,6 @@ body,
     }
 }
 
-/* Navigation*/
-
 .navbar {
     background-color: transparent;
 }
@@ -55,6 +53,7 @@ body,
     height: 100%;
     width: 100%;
 }
+
 .view {
     background: url("https://images.unsplash.com/photo-1481679115566-7aeae7543b52?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=")no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -91,6 +90,7 @@ body,
 .full-bg-img {
     position: absolute;
 }
+
 .full-bg-img, .view .content, .view .mask {
     overflow: hidden;
     top: 0;
@@ -124,16 +124,17 @@ body,
     text-align: center;
 }
 
-.profile {
+.avatar .profile {
     text-align: center;
     border-radius: 50%;
     margin-left: 460px;
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
 }
 
-.profile-container {
+.testimonial-card {
     text-align: center;
+    height: 2000px;
 }
 
 .profile-card {
