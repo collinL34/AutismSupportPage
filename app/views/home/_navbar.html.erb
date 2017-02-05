@@ -21,8 +21,9 @@
                 </li>
                 <li>
                 <% if session[:user_id] %>
+
                 <% else %>
-                    <li><%= link_to 'Log In Now!', :new_session, class: 'blue-text' %></li>
+                    <li><%= link_to 'Log In Now!', :login, class: 'blue-text' %></li>
                     <li><%= link_to 'Sign Up Now!', :new_user, class: 'purple-text' %></li>
                 <% end %>
 

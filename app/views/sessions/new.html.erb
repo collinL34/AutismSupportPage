@@ -1,1 +1,16 @@
-<p>welcome to sign in</p>
+<div class='container'> 
+    <h4 style='text-align: center'>Create An Account Today!</h4>
+    <div class="card wow fadeInRight new-card">
+        <div class="card-block">
+
+            <%= form_tag '/login', class: 'mg-form' do %>
+                <i class="fa fa-envelope prefix"></i>
+                <%= text_field_tag :email%>
+                <i class="fa fa-lock prefix"></i>
+                <%= password_field_tag :password %>
+                <%= submit_tag "Submit",class: "btn btn-primary btn-lg warning-color" %>
+            <% end %>
+
+        </div>
+    </div>
+</div>

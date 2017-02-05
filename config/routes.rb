@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   end
   resources :articles
   resources :categories
-  resources :sessions
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+  
   root 'home#index'
 end
