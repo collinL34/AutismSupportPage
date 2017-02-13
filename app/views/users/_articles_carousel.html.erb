@@ -1,0 +1,49 @@
+
+<h1>Malesuada</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+      
+<!-- Bottom Carousel Indicators -->
+<ol class="carousel-indicators">
+  <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+  <% @articles.reject { |article| @articles.index(article) == 0 }.each do |article|%>
+    <li data-target="#quote-carousel" data-slide-to="<%= @articles.index(article) %>"></li>
+  <% end %>
+</ol>
+        
+<!-- Carousel Slides / Quotes -->
+<div class="carousel-inner">
+
+<!-- first article 1 -->
+<div class="item active">
+  <div class="row">
+    <div class="col-sm-12">
+      <img src="<%= @articles.first.image_link%>" class='article-img'>
+      <small><strong><a href="<%=@articles.first.link%>"> <%= @articles.first.title%> </a> </strong></small>
+    </div>
+  </div>
+</div>
+
+<% @articles.reject { |article| @articles.index(article) == 0 }.each do |article|%>
+<!-- rest of articles -->
+<div class="item">
+  <div class="row">
+    <div class="col-sm-12 articles-car">
+    <img src="<%= article.image_link%>" class='article-img'>
+      <small><strong><a href="<%=article.link%>"> <%= article.title%> </a> </strong></small>
+    </div>
+  </div>
+</div>
+
+<% end %>
+  
+</div>
+        
+
+      </div>                          
+    </div>
+  </div>
+</div>
