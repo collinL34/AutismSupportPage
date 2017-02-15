@@ -1,11 +1,13 @@
+<%= render :partial => './home/navbar' %>
+
 <!--Card-->
 <div class='container profile-container'>
   <div class="card testimonial-card">
 
       <!--Avatar-->
-      <% if @user.profile_img %>
+      <% if @user.profile_img != nil %>
         <div class="avatar">
-        <img src="<%=@user.profile_img%>" class="rounded-circle img-responsive profile">
+          <img src="<%=@user.profile_img%>" class="rounded-circle img-responsive profile">
 
       <%else%>
         <%= form_for @user do |f| %>
@@ -19,13 +21,23 @@
           <h2 class="h2-responsive wow fadeInDown">Friends</h2>
         </div>
 
-      <%= render :partial => 'friends_carousel' %>
+      <% if !@friends.empty? %>
+        <%= render :partial => 'friends_carousel' %>
+      <% else %>
+        <p>Sorry no friends maybe go make some</p>
+      <% end %>
+        
 
       <div class="divider-new">
         <h2 class="h2-responsive wow fadeInDown">Articles</h2>
       </div>
 
-      <%= render :partial => 'articles_carousel' %>
+      <% if !@articles.empty?%>
+        <%= render :partial => 'articles_carousel' %>
+      <% else %>
+        <p>Sorry no articles to display</p>
+      <% end %>
+
   </div>
   <!--/.Card-->
 </div>
