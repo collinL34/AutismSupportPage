@@ -1,45 +1,50 @@
+<%= render :partial => './home/navbar' %>
+
 <div class="container">
   <div class="row">
     <div class="col-md-12">
       <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-      
-<!-- Bottom Carousel Indicators -->
-<ol class="carousel-indicators">
-  <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-  <% @friends.reject { |friend| @friends.index(friend) == 0 }.each do |friend|%>
-    <li data-target="#quote-carousel" data-slide-to="<%= @friends.index(friend) %>"></li>
-  <% end %>
-</ol>
-        
-<!-- Carousel Slides / Quotes -->
-<div class="carousel-inner">
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
 
-<!-- first article 1 -->
-<div class="item active">
-  <div class="row">
-    <div class="col-sm-12">
-      <img src="<%= @friends.first.profile_img%>" class='friend-img'>
-      <small><strong> <%= @friends.first.full_name%> </strong></small>
-    </div>
-  </div>
-</div>
+          <% @friends.reject { |friend| @friends.index(friend) == 0 }.each do |friend|%>
+            <li data-target="#quote-carousel" data-slide-to="<%= @friends.index(friend) %>"></li>
+          <% end %>
 
-<% @friends.reject { |friend| @friends.index(friend) == 0 }.each do |friend|%>
-<!-- rest of articles -->
-<div class="item">
-  <div class="row">
-    <div class="col-sm-12 articles-car">
-    <img src="<%= friend.profile_img%>" class='friend-img'>
-      <small><strong> <%= friend.full_name%> </strong></small>
-    </div>
-  </div>
-</div>
+        </ol>
+                
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
 
-<% end %>
-  
-</div>
-        
+        <!-- first friend -->
+        <div class="item active">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class='card'>
+                <img src="<%= @friends.first.profile_img%>" class='friend-img'>
+                <small><strong> <%= @friends.first.full_name%> </strong></small>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <% @friends.reject { |friend| @friends.index(friend) == 0 }.each do |friend|%>
+        <!-- rest of friends -->
+        <div class="item">
+          <div class="row">
+              <div class='card'>
+                <div class="col-sm-12 articles-car">
+                <img src="<%= friend.profile_img%>" class='friend-img'>
+                <small><strong> <%= friend.full_name%> </strong></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <% end %>
+          
+        </div>
       </div>                          
     </div>
   </div>
