@@ -193,7 +193,9 @@ body,
     background-color: purple;
 }
 
-
+.profile-container {
+    padding-top: 100px;
+}
 
 
 

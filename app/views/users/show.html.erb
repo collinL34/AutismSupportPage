@@ -3,11 +3,11 @@
 <!--Card-->
 <div class='container profile-container'>
   <div class="card testimonial-card">
-
       <!--Avatar-->
       <% if @user.profile_img != nil %>
         <div class="avatar">
           <img src="<%=@user.profile_img%>" class="rounded-circle img-responsive profile">
+        </div>
 
       <%else%>
         <%= form_for @user do |f| %>
@@ -15,7 +15,6 @@
         <% end %>
       <% end %>
     
-        </div>
 
         <div class="divider-new">
           <h2 class="h2-responsive wow fadeInDown">Friends</h2>
