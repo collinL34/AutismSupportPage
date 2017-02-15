@@ -1,19 +1,19 @@
 <%= render :partial => './home/navbar' %>
 
 <div class="container">
+<% if !@friends.empty? %>
   <div class="row">
     <div class="col-md-12">
-      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+      <div class="carousel slide" data-ride="carousel" id="friends-carousel">
         <!-- Bottom Carousel Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+        <ol id='indicators' class="carousel-indicators">
+          <li data-target="#friends-carousel" data-slide-to="0" class="active fa fa-rocket"></li>
 
           <% @friends.reject { |friend| @friends.index(friend) == 0 }.each do |friend|%>
-            <li data-target="#quote-carousel" data-slide-to="<%= @friends.index(friend) %>"></li>
+            <li data-target="#friends-carousel" data-slide-to="<%= @friends.index(friend) %>" class='fa fa-rocket'></li>
           <% end %>
 
         </ol>
-                
         <!-- Carousel Slides / Quotes -->
         <div class="carousel-inner">
 
@@ -21,9 +21,9 @@
         <div class="item active">
           <div class="row">
             <div class="col-sm-12">
-              <div class='card'>
-                <img src="<%= @friends.first.profile_img%>" class='friend-img'>
-                <small><strong> <%= @friends.first.full_name%> </strong></small>
+              <div class='card' id='friend-card'>
+                <img src="<%= @friends.first.profile_img%>" id='friend-img'>
+                <h3><a href="<%= user_path(@friends.first)%>"> <%= @friends.first.full_name%> </a></h3>
               </div>
             </div>
           </div>
@@ -33,10 +33,10 @@
         <!-- rest of friends -->
         <div class="item">
           <div class="row">
-              <div class='card'>
+              <div class='card' id='friend-card'>
                 <div class="col-sm-12 articles-car">
-                <img src="<%= friend.profile_img%>" class='friend-img'>
-                <small><strong> <%= friend.full_name%> </strong></small>
+                <img src="<%= friend.profile_img%>" id='friend-img'>
+                <h3><a href="<%= user_path(friend)%>"> <%= friend.full_name%> </a></h3>
               </div>
             </div>
           </div>
@@ -48,4 +48,9 @@
       </div>                          
     </div>
   </div>
+  <% else %>
+    <p>Sorry No Friends maybe go make some?</p>
+  <% end %>
 </div>
+
+
