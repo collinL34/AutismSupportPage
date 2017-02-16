@@ -3,13 +3,15 @@
 <!--Card-->
 <div class='container profile-container'>
   <div class="card testimonial-card">
+      <h4><%= @user.full_name%></h4>
       <!--Avatar-->
-      <% if @user.profile_img != nil %>
+      <% if !@user.profile_img.nil? %>
         <div class="avatar">
           <img src="<%=@user.profile_img%>" class="rounded-circle img-responsive profile">
-        </div>
+      </div>
 
       <%else%>
+
         <%= form_for @user do |f| %>
           <%= f.text_field :profile_img, placeholder: 'Image Link' %>
         <% end %>

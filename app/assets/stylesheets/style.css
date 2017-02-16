@@ -142,10 +142,6 @@ body,
     height: 2000px;
 }
 
-.profile-card {
-    height: 100%;
-}
-
 .carousel-item .testimonial-card {
     height: 200px;
 }
@@ -194,7 +190,7 @@ body,
 }
 
 .profile-container {
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 
