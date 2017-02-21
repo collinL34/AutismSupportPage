@@ -35,7 +35,11 @@
         <p>Sorry no articles to display</p>
       <% end %>
 
-      <%= link_to 'Edit Profile', edit_user_path(@user), class: 'button-danger'%>
+      <div class="divider-new">
+          <h2 class="h2-responsive wow fadeInDown">Edit Your Profile</h2>
+      </div>
+
+      <%= link_to 'Edit Profile', edit_user_path(@user), class: 'btn btn-primary btn-lg secondary-color'%>
   </div>
   <!--/.Card-->
 </div>
