@@ -283,3 +283,290 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 44ms (Views: 38.8ms | ActiveRecord: 2.1ms)
 
 
+Started GET "/" for ::1 at 2017-02-21 13:19:21 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (3.6ms)
+  Rendered home/_learn_center.html.erb (0.2ms)
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (11.2ms)
+  Rendered home/_maincontent.html.erb (12.9ms)
+  Rendered home/_footer.html.erb (0.4ms)
+  Rendered home/index.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 517ms (Views: 477.6ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/users/6" for ::1 at 2017-02-21 13:19:29 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (1.1ms)
+  Rendered users/_profile_img.html.erb (10.3ms)
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 6], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 138ms (Views: 86.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/users/6" for ::1 at 2017-02-21 13:19:52 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.6ms)
+  Rendered users/_profile_img.html.erb (0.9ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 6], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 38ms (Views: 32.2ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/users/6" for ::1 at 2017-02-21 13:20:54 -0800
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FvL8Iv83EsDD9+6gLOA2gFTnUIuwDGAqQM3Ab90orPyJiJtDMhqOq2v2E5tq7QAfLMyvJyUAUUBVl09hOzpjyA==", "user"=>{"profile_img"=>"https://images.unsplash.com/photo-1477611160464-0b9fb6404529?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="}, "commit"=>"Add a link", "id"=>"6"}
+No template found for UsersController#update, rendering head :no_content
+Completed 204 No Content in 91ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/6" for ::1 at 2017-02-21 13:21:09 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.7ms)
+  Rendered users/_profile_img.html.erb (1.0ms)
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 6], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 39ms (Views: 34.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/6" for ::1 at 2017-02-21 13:27:00 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (3.3ms)
+  Rendered users/_profile_img.html.erb (6.3ms)
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 6], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 451ms (Views: 390.9ms | ActiveRecord: 5.8ms)
+
+
+Started PATCH "/users/6" for ::1 at 2017-02-21 13:27:21 -0800
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UzCpYuwrQg9NJAOzRKKSGr5/w+yWaNV033420zG/UKHMSs4DIQbeZOUl/ogCr6SFxlQ8QANk5B7KJLnd162flQ==", "user"=>{"profile_img"=>"https://images.unsplash.com/photo-1477611160464-0b9fb6404529?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="}, "commit"=>"Add a link", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/6" for ::1 at 2017-02-21 13:27:21 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.5ms)
+  Rendered users/_profile_img.html.erb (0.8ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 6], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 36ms (Views: 30.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/6" for ::1 at 2017-02-21 13:28:07 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.6ms)
+  Rendered users/_profile_img.html.erb (1.2ms)
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 6], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 60ms (Views: 33.6ms | ActiveRecord: 5.5ms)
+
+
+Started PATCH "/users/6" for ::1 at 2017-02-21 13:28:18 -0800
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WGdX0Rzvpnei75kzmU/MSvUmOClUij4d2x3Qa6AA2ZHHHTCw0cI6HAruZAjfQvrVjQ3HhcGGD3fOR19lRhIWpQ==", "user"=>{"profile_img"=>"https://images.unsplash.com/photo-1477611160464-0b9fb6404529?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="}, "commit"=>"Add a link", "id"=>"6"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/users/6" for ::1 at 2017-02-21 13:28:18 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.6ms)
+  Rendered users/_profile_img.html.erb (0.8ms)
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 6], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 60ms (Views: 53.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/6" for ::1 at 2017-02-21 13:28:42 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.6ms)
+  Rendered users/_profile_img.html.erb (1.1ms)
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 6], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 59ms (Views: 35.5ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/users/6" for ::1 at 2017-02-21 13:28:51 -0800
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+y13aRhLJ0S3eRT5NQlAWSOS9bXIHJ7j/1NowXELidxkVxAI1Wa7Lx946cJzBHbGW7kKGV0Qr4nqCefPlxlG6A==", "user"=>{"profile_img"=>"https://images.unsplash.com/photo-1477611160464-0b9fb6404529?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="}, "commit"=>"Add a link", "id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 2ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/users/6" for ::1 at 2017-02-21 13:28:51 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.6ms)
+  Rendered users/_profile_img.html.erb (0.8ms)
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 6], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 44ms (Views: 38.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2017-02-21 13:36:37 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (3.4ms)
+  Rendered home/_learn_center.html.erb (0.3ms)
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (8.9ms)
+  Rendered home/_maincontent.html.erb (11.4ms)
+  Rendered home/_footer.html.erb (0.2ms)
+  Rendered home/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 445ms (Views: 405.6ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/users/6" for ::1 at 2017-02-21 13:36:43 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (1.0ms)
+  Rendered users/_profile_img.html.erb (12.4ms)
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 6], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (43.7ms)
+Completed 200 OK in 133ms (Views: 92.7ms | ActiveRecord: 3.6ms)
+
+
+Started PATCH "/users/6" for ::1 at 2017-02-21 13:36:48 -0800
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nwMSOzFj4YuNkVyE7NYa4MKR/4PqvSfRxAj7IR+nLhA+t3TCRwXmUBWVdu0c4J/ptB13iF9LgZdnzzN4dT16qw==", "user"=>{"profile_img"=>"https://images.unsplash.com/photo-1477611160464-0b9fb6404529?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="}, "commit"=>"Add a link", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/6" for ::1 at 2017-02-21 13:36:48 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.8ms)
+  Rendered users/_profile_img.html.erb (1.3ms)
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 6], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 68ms (Views: 58.8ms | ActiveRecord: 1.7ms)
+
+
+Started PATCH "/users/6" for ::1 at 2017-02-21 13:37:08 -0800
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z8ETfw1eJ3GlKut9ruWPd4LaM31qe+DXZSmiPSnjNhLGdXWGezggqj0uwRRe0wp+9Fa7dt+NRpHG7mpkQ3liqQ==", "user"=>{"profile_img"=>"https://images.unsplash.com/photo-1477611160464-0b9fb6404529?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="}, "commit"=>"Add a link", "id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 19ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/6" for ::1 at 2017-02-21 13:37:08 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.7ms)
+  Rendered users/_profile_img.html.erb (1.2ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 6], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 67ms (Views: 45.4ms | ActiveRecord: 5.2ms)
+
+
+Started PATCH "/users/6" for ::1 at 2017-02-21 13:38:26 -0800
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2iED5is6v/hGw8Rt09oNC7LshG7b9+RpHmr8G7OANBd7lWUfXVy4I97H7gQj7IgCxGAMZW4BQi+9rTRC2RpgrA==", "user"=>{"profile_img"=>"https://images.unsplash.com/photo-1477611160464-0b9fb6404529?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="}, "commit"=>"Add a link", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 19ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/6" for ::1 at 2017-02-21 13:38:26 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.7ms)
+  Rendered users/_profile_img.html.erb (0.9ms)
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 6], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 62ms (Views: 45.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/6" for ::1 at 2017-02-21 13:39:09 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.7ms)
+  Rendered users/_profile_img.html.erb (1.4ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 6], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 68ms (Views: 44.3ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/users/6" for ::1 at 2017-02-21 13:39:12 -0800
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1aTns+Bs6aSaUN/SeSZsH9GBJVylekSXfQ3OxvdmfVh0EIFKlgrufwJU9buJEOkWpw2tVxCM4tHeygafnfwp4w==", "user"=>{"profile_img"=>"https://images.unsplash.com/photo-1477611160464-0b9fb6404529?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="}, "commit"=>"Add a link", "id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/users_controller.rb:33:in `update'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.4ms)

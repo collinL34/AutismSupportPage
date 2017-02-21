@@ -9,6 +9,9 @@
         <div class="avatar">
           <img src="<%=@user.profile_img%>" class="rounded-circle img-responsive profile">
         </div>
+
+      <% else %>
+        <%= render :partial => 'profile_img'%>
       <% end %>
 
         <div class="divider-new">

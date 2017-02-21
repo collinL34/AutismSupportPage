@@ -1,0 +1,13 @@
+<div class='container'> 
+    <h4 style='text-align: center'>Add a Profile Image Today!</h4>
+    <div class="card wow fadeInRight new-card">
+        <div class="card-block">
+
+            <%= form_for @user, action: 'edit', class: 'md-form' do |f| %>
+                <%= f.text_field :profile_img, placeholder: 'profile_img', class: 'form-control'%>
+                <%= f.submit 'Add a link', class: "btn btn-primary btn-lg warning-color" %>
+            <% end%>
+
+        </div>
+    </div>
+</div>

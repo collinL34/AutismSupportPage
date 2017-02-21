@@ -25,6 +25,17 @@ class UsersController < ApplicationController
   end
 
   def update
+    user = User.find(params[:id])
+
+    p '***************************************'
+
+    if user
+      user.update(params[:user])
+      redirect_to user
+    else
+      p "you failed $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
+      redirect_to user
+    end
   end
 
   def destroy
