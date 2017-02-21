@@ -3,14 +3,17 @@ class UsersController < ApplicationController
   def index    
   end
 
-  def new
-    @user = User.new()
-  end
-
   def show
     @user = User.find(params[:id])
     @articles = @user.articles
     @friends = @user.friends
+  end
+
+  def new
+    @user = User.new()
+  end
+
+  def edit
   end
 
   def create
@@ -30,7 +33,7 @@ class UsersController < ApplicationController
     p '***************************************'
 
     if user
-      user.update(params[:user])
+      user.update(user_params)
       redirect_to user
     else
       p "you failed $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
@@ -44,6 +47,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:first_name, :last_name, :address, :zip_code, :city, :state, :email, :password)
+    params.require(:user).permit(:first_name, :last_name, :address, :zip_code, :city, :state, :email, :password, :profile_img)
   end
 end
