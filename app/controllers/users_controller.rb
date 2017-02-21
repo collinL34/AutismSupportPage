@@ -14,6 +14,7 @@ class UsersController < ApplicationController
   end
 
   def edit
+    @user = User.find(params[:id])
   end
 
   def create
@@ -30,14 +31,11 @@ class UsersController < ApplicationController
   def update
     user = User.find(params[:id])
 
-    p '***************************************'
-
     if user
       user.update(user_params)
       redirect_to user
     else
-      p "you failed $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
-      redirect_to user
+      redirect_to :back
     end
   end
 
