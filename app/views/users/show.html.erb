@@ -45,7 +45,9 @@
           <h2 class="h2-responsive wow fadeInDown">Add as Friend</h2>
       </div>
 
-      <button class='btn btn-primary btn-lg'>Friend Me!</button>
+      <%= form_for new_friendship_url do |f| %>
+        <%= f.submit 'Friend ME!', class: 'btn btn-primary' %>
+      <% end %>
 
   </div>
   <!--/.Card-->
