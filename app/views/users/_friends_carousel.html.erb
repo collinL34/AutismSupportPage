@@ -27,17 +27,22 @@
         </div>
 
         <% @friends.reject { |friend| @friends.index(friend) == 0 }.each do |friend|%>
-        <!-- rest of friends -->
-        <div class="item">
-          <div class="row">
-              <div class='card' id='friend-card'>
-                <div class="col-sm-12 articles-car">
-                <img src="<%= friend.profile_img%>" id='friend-img'>
-                <h3><a href="<%= user_path(friend)%>"> <%= friend.full_name%> </a></h3>
+          <!-- rest of friends -->
+          <div class="item">
+            <div class="row">
+                <div class='card' id='friend-card'>
+                  <div class="col-sm-12 articles-car">
+                  <% if !friend.profile_img.nil? %>
+                    <img src="<%= friend.profile_img%>" id='friend-img'>
+                  <% else %>
+                    <h2>No Image</h2>
+                  <% end %>
+
+                  <h3><a href="<%= user_path(friend)%>"> <%= friend.full_name%> </a></h3>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
         <% end %>
           
