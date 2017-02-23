@@ -9,6 +9,7 @@
 
             <% @articles.reject { |article| @articles.index(article) == 0 }.each do |article|%>
               <li data-target="#articles-carousel" data-slide-to="<%= @articles.index(article) %>" class='fa fa-rocket'></li>
+              <li> <a href="<%= User.find(article.author_id)%>" class='btn btn-warning'>Written by: <%= User.find(article.author_id).full_name %> </a> </li>
             <% end %>
           </ol>
                   

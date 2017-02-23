@@ -7,6 +7,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @articles = @user.articles
     @friends = @user.friends
+    @friendship = Friendship.new()
   end
 
   def new
