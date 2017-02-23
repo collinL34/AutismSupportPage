@@ -190,13 +190,21 @@ body,
     background-color: purple;
 }
 
-.profile-container {
-    padding-top: 70px;
+.page-footer .row {
+    margin-left: 200px;
+}
+
+.useful-links {
+    margin-left: 120px;
 }
 
 .links {
-    text-align: right;
+    text-align: center;
 }
+
+
+
+
 
 
 
