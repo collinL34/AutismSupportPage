@@ -6838,3 +6838,618 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for ::1 at 2017-02-24 12:01:44 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (26.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (3.9ms)
+  Rendered home/_learn_center.html.erb (0.3ms)
+  [1m[36mArticle Load (13.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (26.9ms)
+  Rendered home/_maincontent.html.erb (28.7ms)
+  Rendered home/_footer.html.erb (0.5ms)
+  Rendered home/index.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 488ms (Views: 394.2ms | ActiveRecord: 53.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:03:45 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.6ms)
+  Rendered home/_learn_center.html.erb (0.2ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (2.0ms)
+  Rendered home/_maincontent.html.erb (3.4ms)
+  Rendered home/_footer.html.erb (0.2ms)
+  Rendered home/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 45ms (Views: 42.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:04:07 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.5ms)
+  Rendered home/_learn_center.html.erb (0.2ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.4ms)
+  Rendered home/_maincontent.html.erb (2.5ms)
+  Rendered home/_footer.html.erb (0.2ms)
+  Rendered home/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:04:15 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.5ms)
+  Rendered home/_learn_center.html.erb (0.2ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.5ms)
+  Rendered home/_maincontent.html.erb (2.6ms)
+  Rendered home/_footer.html.erb (0.2ms)
+  Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:06:11 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_navbar.html.erb (159.8ms)
+  Rendered home/index.html.erb within layouts/application (161.3ms)
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `recipes_path' for #<#<Class:0x007fa96fc200e0>:0x007fa97703ba60>
+Did you mean?  categories_path):
+    31:                 </li>
+    32:             </ul>
+    33:             <!--Search form-->
+    34:             <%= form_tag(recipes_path, :method => "get", id: "search-form") do %>
+    35:                 <%= text_field_tag :search, params[:search], placeholder: "Search Recipes", class:"form-control", placeholder: "Search" %>
+    36:                 <%= submit_tag "Search", :name => nil %>
+    37:             <% end %>
+  
+app/views/home/_navbar.html.erb:34:in `_app_views_home__navbar_html_erb___2369507146871975657_70182821859660'
+app/views/home/index.html.erb:1:in `_app_views_home_index_html_erb___2673105637152086900_70182821890160'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.2ms)
+Started GET "/" for ::1 at 2017-02-24 12:06:30 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (1.0ms)
+  Rendered home/_learn_center.html.erb (0.2ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (6.9ms)
+  Rendered home/_maincontent.html.erb (8.4ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 56ms (Views: 42.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:06:57 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (1.4ms)
+  Rendered home/_learn_center.html.erb (0.4ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (2.0ms)
+  Rendered home/_maincontent.html.erb (3.3ms)
+  Rendered home/_footer.html.erb (0.2ms)
+  Rendered home/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 46ms (Views: 42.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:07:05 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.9ms)
+  Rendered home/_learn_center.html.erb (0.2ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.5ms)
+  Rendered home/_maincontent.html.erb (2.7ms)
+  Rendered home/_footer.html.erb (0.4ms)
+  Rendered home/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:07:42 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.9ms)
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/collinshelby/AutismSupportPage/app/views/home/_navbar.html.erb:34: syntax error, unexpected tLABEL
+...et", id: "search-form"), class:"form-inline float-xs-right" ...
+...                               ^
+/Users/collinshelby/AutismSupportPage/app/views/home/_navbar.html.erb:34: syntax error, unexpected keyword_do, expecting keyword_end
+..."form-inline float-xs-right" do @output_buffer.safe_append='
+...                               ^
+/Users/collinshelby/AutismSupportPage/app/views/home/_navbar.html.erb:41: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/home/_navbar.html.erb:34: syntax error, unexpected tLABEL
+app/views/home/_navbar.html.erb:34: syntax error, unexpected keyword_do, expecting keyword_end
+app/views/home/_navbar.html.erb:41: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/home/index.html.erb:1:in `_app_views_home_index_html_erb___2673105637152086900_70182901333440'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.0ms)
+Started GET "/" for ::1 at 2017-02-24 12:08:02 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.8ms)
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/collinshelby/AutismSupportPage/app/views/home/_navbar.html.erb:34: syntax error, unexpected tLABEL, expecting keyword_end
+...get", id: "search-form") class:"form-inline float-xs-right" ...
+...                               ^
+/Users/collinshelby/AutismSupportPage/app/views/home/_navbar.html.erb:34: syntax error, unexpected keyword_do, expecting keyword_end
+..."form-inline float-xs-right" do @output_buffer.safe_append='
+...                               ^
+/Users/collinshelby/AutismSupportPage/app/views/home/_navbar.html.erb:41: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/home/_navbar.html.erb:34: syntax error, unexpected tLABEL, expecting keyword_end
+app/views/home/_navbar.html.erb:34: syntax error, unexpected keyword_do, expecting keyword_end
+app/views/home/_navbar.html.erb:41: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/home/index.html.erb:1:in `_app_views_home_index_html_erb___2673105637152086900_70182820729620'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.1ms)
+Started GET "/" for ::1 at 2017-02-24 12:08:24 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.9ms)
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/collinshelby/AutismSupportPage/app/views/home/_navbar.html.erb:34: syntax error, unexpected tLABEL
+...et", id: "search-form"), class:"form-inline float-xs-right" ...
+...                               ^
+/Users/collinshelby/AutismSupportPage/app/views/home/_navbar.html.erb:34: syntax error, unexpected keyword_do, expecting keyword_end
+..."form-inline float-xs-right" do @output_buffer.safe_append='
+...                               ^
+/Users/collinshelby/AutismSupportPage/app/views/home/_navbar.html.erb:41: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/home/_navbar.html.erb:34: syntax error, unexpected tLABEL
+app/views/home/_navbar.html.erb:34: syntax error, unexpected keyword_do, expecting keyword_end
+app/views/home/_navbar.html.erb:41: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/home/index.html.erb:1:in `_app_views_home_index_html_erb___2673105637152086900_70182920072320'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.8ms)
+Started GET "/" for ::1 at 2017-02-24 12:08:44 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (1.1ms)
+  Rendered home/_learn_center.html.erb (0.3ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.9ms)
+  Rendered home/_maincontent.html.erb (3.2ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:09:08 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.9ms)
+  Rendered home/_learn_center.html.erb (0.2ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.5ms)
+  Rendered home/_maincontent.html.erb (2.7ms)
+  Rendered home/_footer.html.erb (0.2ms)
+  Rendered home/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:09:18 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.8ms)
+  Rendered home/_learn_center.html.erb (0.2ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.4ms)
+  Rendered home/_maincontent.html.erb (2.5ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:10:01 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (1.0ms)
+  Rendered home/_learn_center.html.erb (0.2ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.7ms)
+  Rendered home/_maincontent.html.erb (3.0ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:10:20 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (1.0ms)
+  Rendered home/_learn_center.html.erb (0.2ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.5ms)
+  Rendered home/_maincontent.html.erb (2.7ms)
+  Rendered home/_footer.html.erb (0.2ms)
+  Rendered home/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:10:45 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.9ms)
+  Rendered home/_learn_center.html.erb (0.2ms)
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (2.2ms)
+  Rendered home/_maincontent.html.erb (3.8ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:11:44 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (1.1ms)
+  Rendered home/_learn_center.html.erb (0.2ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.5ms)
+  Rendered home/_maincontent.html.erb (2.6ms)
+  Rendered home/_footer.html.erb (0.6ms)
+  Rendered home/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 40ms (Views: 37.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:11:46 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.9ms)
+  Rendered home/_learn_center.html.erb (0.4ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.7ms)
+  Rendered home/_maincontent.html.erb (3.1ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:12:00 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (1.0ms)
+  Rendered home/_learn_center.html.erb (0.3ms)
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (2.0ms)
+  Rendered home/_maincontent.html.erb (3.8ms)
+  Rendered home/_footer.html.erb (0.4ms)
+  Rendered home/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 42ms (Views: 40.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:12:09 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.9ms)
+  Rendered home/_learn_center.html.erb (0.2ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.8ms)
+  Rendered home/_maincontent.html.erb (3.0ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:12:20 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (1.5ms)
+  Rendered home/_learn_center.html.erb (0.3ms)
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (2.2ms)
+  Rendered home/_maincontent.html.erb (3.8ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:23:17 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (4.2ms)
+  Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial ../categories/_index.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/collinshelby/AutismSupportPage/app/views"
+  * "/Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/semantic-ui-sass-2.2.6.0/app/views"
+):
+    36:                 <%= submit_tag "Search", :name => nil, class: 'btn btn-danger' %>
+    37:             <% end %>
+    38: 
+    39:             <%= render '../categories/index.html.erb'%>
+    40: 
+    41:         </div>
+    42:     </nav>
+  
+app/views/home/_navbar.html.erb:39:in `_app_views_home__navbar_html_erb___2369507146871975657_70182895978340'
+app/views/home/index.html.erb:1:in `_app_views_home_index_html_erb___2673105637152086900_70182896241020'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.5ms)
+Started GET "/" for ::1 at 2017-02-24 12:23:36 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (1.9ms)
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (You invoked render but did not give any of :partial, :template, :inline, :file, :plain, :html, :text or :body option.):
+    36:                 <%= submit_tag "Search", :name => nil, class: 'btn btn-danger' %>
+    37:             <% end %>
+    38: 
+    39:             <%= render :view => '../categories/index.html.erb'%>
+    40: 
+    41:         </div>
+    42:     </nav>
+  
+app/views/home/_navbar.html.erb:39:in `_app_views_home__navbar_html_erb___2369507146871975657_70182901010760'
+app/views/home/index.html.erb:1:in `_app_views_home_index_html_erb___2673105637152086900_70182901491600'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.3ms)
+Started GET "/" for ::1 at 2017-02-24 12:23:48 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (3.7ms)
+  Rendered home/index.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing template ../categories/index.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/collinshelby/AutismSupportPage/app/views"
+  * "/Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/semantic-ui-sass-2.2.6.0/app/views"
+):
+    36:                 <%= submit_tag "Search", :name => nil, class: 'btn btn-danger' %>
+    37:             <% end %>
+    38: 
+    39:             <%= render :template => '../categories/index.html.erb'%>
+    40: 
+    41:         </div>
+    42:     </nav>
+  
+app/views/home/_navbar.html.erb:39:in `_app_views_home__navbar_html_erb___2369507146871975657_70182835966240'
+app/views/home/index.html.erb:1:in `_app_views_home_index_html_erb___2673105637152086900_70182843517140'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (68.7ms)
+Started GET "/" for ::1 at 2017-02-24 12:24:15 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendering categories/index.html.erb
+  Rendered categories/index.html.erb (0.3ms)
+  Rendered home/_navbar.html.erb (2.1ms)
+  Rendered home/_learn_center.html.erb (0.2ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (11.7ms)
+  Rendered home/_maincontent.html.erb (12.9ms)
+  Rendered home/_footer.html.erb (0.5ms)
+  Rendered home/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 54ms (Views: 47.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:24:36 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendering categories/index.html.erb
+  Rendered categories/index.html.erb (0.2ms)
+  Rendered home/_navbar.html.erb (2.0ms)
+  Rendered home/_learn_center.html.erb (0.2ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.7ms)
+  Rendered home/_maincontent.html.erb (2.9ms)
+  Rendered home/_footer.html.erb (0.4ms)
+  Rendered home/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:24:47 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendering categories/index.html.erb
+  Rendered categories/index.html.erb (0.3ms)
+  Rendered home/_navbar.html.erb (2.0ms)
+  Rendered home/_learn_center.html.erb (0.2ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.8ms)
+  Rendered home/_maincontent.html.erb (3.1ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 12:25:12 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendering categories/index.html.erb
+  Rendered categories/index.html.erb (0.3ms)
+  Rendered home/_navbar.html.erb (2.3ms)
+  Rendered home/_learn_center.html.erb (0.2ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.5ms)
+  Rendered home/_maincontent.html.erb (2.7ms)
+  Rendered home/_footer.html.erb (0.2ms)
+  Rendered home/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 46ms (Views: 44.1ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mCategory Load (1.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+Started GET "/" for ::1 at 2017-02-24 12:25:59 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendering categories/index.html.erb
+  Rendered categories/index.html.erb (2.5ms)
+  Rendered home/_navbar.html.erb (5.5ms)
+  Rendered home/index.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @categories.each do |categ| %>
+    2:   <%= categ.name%>
+    3: <% end %>
+    4: <p>hey there me</p>
+  
+app/views/categories/index.html.erb:1:in `_app_views_categories_index_html_erb___1449180787518710508_70182895436880'
+app/views/home/_navbar.html.erb:38:in `_app_views_home__navbar_html_erb___2369507146871975657_70182895507660'
+app/views/home/index.html.erb:1:in `_app_views_home_index_html_erb___2673105637152086900_70182895584440'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.9ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (72.5ms)
+Started GET "/" for ::1 at 2017-02-24 12:26:19 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendering categories/index.html.erb
+  Rendered categories/index.html.erb (2.6ms)
+  Rendered home/_navbar.html.erb (4.9ms)
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @categories.each do |categ| %>
+    2:   <%= categ.name%>
+    3: <% end %>
+    4: <p>hey there me</p>
+  
+app/views/categories/index.html.erb:1:in `_app_views_categories_index_html_erb___1449180787518710508_70182900366620'
+app/views/home/_navbar.html.erb:38:in `_app_views_home__navbar_html_erb___2369507146871975657_70182877659860'
+app/views/home/index.html.erb:1:in `_app_views_home_index_html_erb___2673105637152086900_70182899860040'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.9ms)
+Started GET "/" for ::1 at 2017-02-24 12:26:50 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendering categories/index.html.erb
+  Rendered categories/index.html.erb (2.1ms)
+  Rendered home/_navbar.html.erb (3.8ms)
+  Rendered home/index.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @categories.each do |categ| %>
+    2:   <%= categ.name%>
+    3: <% end %>
+    4: <p>hey there me</p>
+  
+app/views/categories/index.html.erb:1:in `_app_views_categories_index_html_erb___1449180787518710508_70182822780340'
+app/views/home/_navbar.html.erb:38:in `_app_views_home__navbar_html_erb___2369507146871975657_70182822906140'
+app/views/home/index.html.erb:1:in `_app_views_home_index_html_erb___2673105637152086900_70182823023100'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.3ms)
+Started GET "/" for ::1 at 2017-02-24 12:26:58 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendering categories/index.html.erb
+  Rendered categories/index.html.erb (2.0ms)
+  Rendered home/_navbar.html.erb (3.7ms)
+  Rendered home/index.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @categories.each do |categ| %>
+    2:   <%= categ.name%>
+    3: <% end %>
+    4: <p>hey there me</p>
+  
+app/views/categories/index.html.erb:1:in `_app_views_categories_index_html_erb___1449180787518710508_70182875320480'
+app/views/home/_navbar.html.erb:38:in `_app_views_home__navbar_html_erb___2369507146871975657_70182896154040'
+app/views/home/index.html.erb:1:in `_app_views_home_index_html_erb___2673105637152086900_70182875609180'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.6ms)
