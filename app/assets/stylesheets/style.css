@@ -221,7 +221,10 @@ body,
     margin-left: 500px;
 }
 
-
+#search {
+    width: 200px;
+    font-size: 20px;
+}
 
 
 
