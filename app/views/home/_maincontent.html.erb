@@ -146,7 +146,10 @@
     <!--Section: Testimonials-->
     <section id="testimonials">
         <div class="row">
-        <%= render :partial => 'articles' %>
+            <%= render :partial => 'articles' %>
+            <% if session[:user_id]%>
+                <p><%= link_to 'Add an Article!', new_article_path, class: 'btn btn-warning article-link'%></p>
+            <% end %>
         </div>
     </section>
     <!--/Section: Testimonials-->

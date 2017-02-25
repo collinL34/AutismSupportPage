@@ -11390,3 +11390,733 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 40ms (Views: 37.9ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/" for ::1 at 2017-02-24 23:16:12 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (3.5ms)
+  Rendered home/_learn_center.html.erb (0.6ms)
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (10.2ms)
+  Rendered home/_maincontent.html.erb (11.6ms)
+  Rendered home/_footer.html.erb (0.4ms)
+  Rendered home/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 410ms (Views: 370.6ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:20:57 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (1.1ms)
+  Rendered home/_learn_center.html.erb (0.5ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.5ms)
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY created_at DESC[0m
+  Rendered home/_maincontent.html.erb (144.1ms)
+  Rendered home/index.html.erb within layouts/application (149.3ms)
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 2.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_articles_path' for #<#<Class:0x007fa57c017808>:0x007fa5817efc60>
+Did you mean?  new_article_path
+               new_user_article_path
+               new_article_url
+               new_category_path
+               user_articles_path
+               new_user_path
+               new_friendship_path
+               user_article_path
+               edit_article_path):
+    147:     <section id="testimonials">
+    148:         <div class="row">
+    149:             <%= render :partial => 'articles' %>
+    150:             <%= link_to new_articles_path, class: 'btn btn-warning '%>
+    151:         </div>
+    152:     </section>
+    153:     <!--/Section: Testimonials-->
+  
+app/views/home/_maincontent.html.erb:150:in `_app_views_home__maincontent_html_erb___4090793525729671369_70174362505860'
+app/views/home/index.html.erb:14:in `_app_views_home_index_html_erb___4485005882062923128_70174431955160'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.1ms)
+Started GET "/" for ::1 at 2017-02-24 23:21:08 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.8ms)
+  Rendered home/_learn_center.html.erb (0.4ms)
+  Rendered home/_maincontent.html.erb (0.8ms)
+  Rendered home/index.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/collinshelby/AutismSupportPage/app/views/home/_maincontent.html.erb:150: syntax error, unexpected tIDENTIFIER, expecting ')'
+...d an Article' new_articles_path, class: 'btn btn-warning ');...
+...                               ^):
+  
+app/views/home/_maincontent.html.erb:150: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/index.html.erb:14:in `_app_views_home_index_html_erb___4485005882062923128_70174431561360'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.3ms)
+Started GET "/" for ::1 at 2017-02-24 23:21:10 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (1.3ms)
+  Rendered home/_learn_center.html.erb (0.6ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (2.1ms)
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY created_at DESC[0m
+  Rendered home/_maincontent.html.erb (118.9ms)
+  Rendered home/index.html.erb within layouts/application (124.4ms)
+Completed 500 Internal Server Error in 129ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_articles_path' for #<#<Class:0x007fa57c017808>:0x007fa58778b020>
+Did you mean?  new_article_path
+               new_user_article_path
+               new_article_url
+               new_category_path
+               user_articles_path
+               new_user_path
+               new_friendship_path
+               user_article_path
+               edit_article_path):
+    147:     <section id="testimonials">
+    148:         <div class="row">
+    149:             <%= render :partial => 'articles' %>
+    150:             <%= link_to 'Add an Article', new_articles_path, class: 'btn btn-warning '%>
+    151:         </div>
+    152:     </section>
+    153:     <!--/Section: Testimonials-->
+  
+app/views/home/_maincontent.html.erb:150:in `_app_views_home__maincontent_html_erb___4090793525729671369_70174407930600'
+app/views/home/index.html.erb:14:in `_app_views_home_index_html_erb___4485005882062923128_70174459584020'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.9ms)
+Started GET "/" for ::1 at 2017-02-24 23:21:18 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (1.2ms)
+  Rendered home/_learn_center.html.erb (0.6ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (2.3ms)
+  Rendered home/_maincontent.html.erb (4.6ms)
+  Rendered home/_footer.html.erb (0.4ms)
+  Rendered home/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 59ms (Views: 56.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:21:56 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.9ms)
+  Rendered home/_learn_center.html.erb (0.4ms)
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (2.8ms)
+  Rendered home/_maincontent.html.erb (4.4ms)
+  Rendered home/_footer.html.erb (0.2ms)
+  Rendered home/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 50ms (Views: 47.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:22:10 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.8ms)
+  Rendered home/_learn_center.html.erb (0.4ms)
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.9ms)
+  Rendered home/_maincontent.html.erb (3.3ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:22:16 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.9ms)
+  Rendered home/_learn_center.html.erb (0.4ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (2.3ms)
+  Rendered home/_maincontent.html.erb (4.0ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 47ms (Views: 44.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:22:28 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.8ms)
+  Rendered home/_learn_center.html.erb (0.4ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.4ms)
+  Rendered home/_maincontent.html.erb (2.6ms)
+  Rendered home/_footer.html.erb (0.2ms)
+  Rendered home/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:22:42 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (1.1ms)
+  Rendered home/_learn_center.html.erb (0.5ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.6ms)
+  Rendered home/_maincontent.html.erb (2.9ms)
+  Rendered home/_footer.html.erb (0.2ms)
+  Rendered home/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 43ms (Views: 41.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:23:13 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.9ms)
+  Rendered home/_learn_center.html.erb (0.4ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.5ms)
+  Rendered home/_maincontent.html.erb (2.7ms)
+  Rendered home/_footer.html.erb (0.2ms)
+  Rendered home/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:23:16 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.7ms)
+  Rendered home/_learn_center.html.erb (0.3ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.4ms)
+  Rendered home/_maincontent.html.erb (2.6ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:23:52 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.8ms)
+  Rendered home/_learn_center.html.erb (0.4ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.5ms)
+  Rendered home/_maincontent.html.erb (2.8ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:23:56 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.9ms)
+  Rendered home/_learn_center.html.erb (0.4ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.5ms)
+  Rendered home/_maincontent.html.erb (3.0ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:24:00 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.8ms)
+  Rendered home/_learn_center.html.erb (0.4ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.7ms)
+  Rendered home/_maincontent.html.erb (3.0ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:24:28 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.7ms)
+  Rendered home/_learn_center.html.erb (0.3ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.4ms)
+  Rendered home/_maincontent.html.erb (2.7ms)
+  Rendered home/_footer.html.erb (0.2ms)
+  Rendered home/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:24:50 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.9ms)
+  Rendered home/_learn_center.html.erb (0.4ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.5ms)
+  Rendered home/_maincontent.html.erb (2.8ms)
+  Rendered home/_footer.html.erb (0.2ms)
+  Rendered home/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:24:55 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.8ms)
+  Rendered home/_learn_center.html.erb (0.4ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.5ms)
+  Rendered home/_maincontent.html.erb (2.8ms)
+  Rendered home/_footer.html.erb (0.2ms)
+  Rendered home/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for ::1 at 2017-02-24 23:24:58 -0800
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:25:44 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (1.0ms)
+  Rendered home/_learn_center.html.erb (0.4ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.7ms)
+  Rendered home/_maincontent.html.erb (3.0ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:31:21 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.9ms)
+  Rendered home/_learn_center.html.erb (0.5ms)
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (10.3ms)
+  Rendered home/_maincontent.html.erb (11.8ms)
+  Rendered home/_footer.html.erb (0.4ms)
+  Rendered home/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 65ms (Views: 46.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for ::1 at 2017-02-24 23:31:23 -0800
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2017-02-24 23:31:29 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f9Vxq2e2uiEccHcPrn3JckoiIXblNZNSYvQCr09wAOK8ERYojb7B9WFDnaPU3D3757K375848LJe71OboveoZQ==", "email"=>"c@c.com", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (8.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "c@c.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 90ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:31:29 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (1.4ms)
+  Rendered home/_learn_center.html.erb (0.6ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.8ms)
+  Rendered home/_maincontent.html.erb (3.1ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 49ms (Views: 47.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for ::1 at 2017-02-24 23:31:31 -0800
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2017-02-24 23:31:37 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JXPlkTrR1GFCJz7Cc0wjO2XiDBsDHsTwWYxq2HSjWCnmt4IS0NmvtT8U1G4J7deyyHKagnkTpxBllzvsmSTwrg==", "email"=>"c@c.com", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "c@c.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 75ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/6" for ::1 at 2017-02-24 23:31:37 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user_navbar.html.erb (1.0ms)
+  [1m[36mUser Exists (8.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1[0m  [["user_id", 6]]
+  Rendered users/_friends_carousel.html.erb (6.2ms)
+  [1m[36mArticle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 6], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 103ms (Views: 60.2ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:31:39 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered home/_navbar.html.erb (2.9ms)
+  Rendered home/_learn_center.html.erb (0.6ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.8ms)
+  Rendered home/_maincontent.html.erb (3.3ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 45ms (Views: 42.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/new" for ::1 at 2017-02-24 23:31:42 -0800
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for ::1 at 2017-02-24 23:32:12 -0800
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (56.1ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `submit_tag' for #<ActionView::Helpers::FormBuilder:0x007fa5841fadc0>
+Did you mean?  submit):
+     6:             <%= form_for @article, class: 'mg-form' do |f| %>
+     7:                 <%= f.text_field :link, placeholder: 'article link' %>
+     8:                 <%= f.text_field :category, placeholder: 'Category type' %>
+     9:                 <%= f.submit_tag "Submit",class: "btn btn-primary btn-lg warning-color" %>
+    10:             <% end %>
+    11: 
+    12:         </div>
+  
+app/views/articles/new.html.erb:9:in `block in _app_views_articles_new_html_erb__2300487619430203261_70174431629220'
+app/views/articles/new.html.erb:6:in `_app_views_articles_new_html_erb__2300487619430203261_70174431629220'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.3ms)
+Started GET "/articles/new" for ::1 at 2017-02-24 23:32:18 -0800
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2017-02-24 23:32:56 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JzEQCw85kTPnDNbaWRY5musp2GgayPGUqUA6C9NA6Abk9XeI5THq55o/PHYjt80TRrlO8WDFknSVW2s/PsdAgQ==", "article"=>{"link"=>"https://www.autismspeaks.org/what-autism/symptoms", "category"=>"learning"}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `user_params' for #<ArticlesController:0x007fa5808ae170>
+Did you mean?  user_path):
+  
+app/controllers/articles_controller.rb:14:in `create'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.2ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.2ms)
+Started GET "/articles/new" for ::1 at 2017-02-24 23:38:09 -0800
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 42ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2017-02-24 23:38:17 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yKVe3oOZr7Gwv2LaKpaIHQJdBs+EpO0rgCTkIBjivXALYTldaZHUZc2MiHZQN3yUr82QVv6pjsu8P7UU9WUV9w==", "article"=>{"link"=>"https://www.autismspeaks.org/what-autism/symptoms", "category"=>"Test"}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ):
+  
+app/models/article.rb:7:in `nokogiri_obj_makr'
+app/controllers/articles_controller.rb:14:in `create'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.4ms)
+Started GET "/articles/new" for ::1 at 2017-02-24 23:39:39 -0800
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 51ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2017-02-24 23:39:41 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CPcMQFfwWFT8jGJkCakTMJyiiZkFXwtpEkhshk+XiP/LM2vDvfgjgIG/iMhzCOe5MTIfAH9SaIkuUz2yohAgeA==", "article"=>{"link"=>"https://www.autismspeaks.org/what-autism/symptoms", "category"=>"Test"}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ):
+  
+app/models/article.rb:7:in `nokogiri_obj_makr'
+app/controllers/articles_controller.rb:15:in `create'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.1ms)
+Started GET "/articles/new" for ::1 at 2017-02-24 23:40:05 -0800
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 44ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2017-02-24 23:40:07 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZMyDcifZAMFlyYgDlHBpmigZSHodoQ9l9HSaE61Up4unCOTxzdF7FRj6Yq/u0Z0ThYne42esbIXIb8snQNMPDA==", "article"=>{"link"=>"https://www.autismspeaks.org/what-autism/symptoms", "category"=>"Test"}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ):
+  
+app/models/article.rb:7:in `nokogiri_obj_makr'
+app/controllers/articles_controller.rb:15:in `create'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.1ms)
+Started GET "/" for ::1 at 2017-02-24 23:40:26 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered home/_navbar.html.erb (2.5ms)
+  Rendered home/_learn_center.html.erb (1.0ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (7.4ms)
+  Rendered home/_maincontent.html.erb (9.5ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 83ms (Views: 62.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/new" for ::1 at 2017-02-24 23:40:28 -0800
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 43ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2017-02-24 23:40:36 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jS0rYgeXEIyHZ5RYSQXuINUXJEoUb9F6eJuZB2uNhCBO6Uzh7Z9rWPpUfvQzpBqpeIey025isppEgMgzhgospw==", "article"=>{"link"=>"https://www.autismspeaks.org/what-autism/symptoms", "category"=>"Test"}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/articles_controller.rb:14:in `[]'
+app/controllers/articles_controller.rb:14:in `create'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.5ms)
+Started GET "/articles/new" for ::1 at 2017-02-24 23:40:49 -0800
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 57ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2017-02-24 23:40:51 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rUrpKnqKgOTg2idVYfwdAfGErqnjAOVCfmQqKZycAfZujo6pkIL7MJ3pzfkbXemIXBQ4MJkNhqJCf3sdcRupcQ==", "article"=>{"link"=>"https://www.autismspeaks.org/what-autism/symptoms", "category"=>"Test"}, "commit"=>"Submit"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 923ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/articles_controller.rb:17:in `create'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.9ms)
+Started GET "/articles/new" for ::1 at 2017-02-24 23:41:12 -0800
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 50ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2017-02-24 23:41:13 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qikgIjnKpKNpAX6N/sEEQnNoTXElLdpqiJpegC8PqUdp7Ueh08LfdxQylCGEYPDL3vjb6F8guYq0gQ+0wogBwA==", "article"=>{"link"=>"https://www.autismspeaks.org/what-autism/symptoms", "category"=>"Test"}, "commit"=>"Submit"}
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "Test"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 539ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'img_link' for Article.):
+  
+app/controllers/articles_controller.rb:21:in `create'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.7ms)
+Started GET "/articles/new" for ::1 at 2017-02-24 23:41:32 -0800
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 45ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2017-02-24 23:41:33 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LmjAdMBd70XK24uFrHgHWUziudDT0jPelGQ3quI18qntrKf3KlWUkbfoYSnW2fPQ4XIvSanfUD6of2aeD7JaLg==", "article"=>{"link"=>"https://www.autismspeaks.org/what-autism/symptoms", "category"=>"Test"}, "commit"=>"Submit"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "Test"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "articles" ("title", "author_id", "image_link", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Symptoms | What is Autism? | Autism Speaks"], ["author_id", 6], ["image_link", "https://www.autismspeaks.org/sites/default/files/imagecache/feature_megamenu_large/images/features/resources-in-your-685-x-385.jpg"], ["category_id", 1], ["created_at", 2017-02-25 07:41:34 UTC], ["updated_at", 2017-02-25 07:41:34 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 584ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:41:34 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered home/_navbar.html.erb (3.2ms)
+  Rendered home/_learn_center.html.erb (0.5ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (2.9ms)
+  Rendered home/_maincontent.html.erb (4.7ms)
+  Rendered home/_footer.html.erb (0.5ms)
+  Rendered home/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 59ms (Views: 55.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:41:44 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered home/_navbar.html.erb (1.7ms)
+  Rendered home/_learn_center.html.erb (0.4ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.4ms)
+  Rendered home/_maincontent.html.erb (2.8ms)
+  Rendered home/_footer.html.erb (1.1ms)
+  Rendered home/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 43ms (Views: 40.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-02-24 23:41:51 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered home/_navbar.html.erb (2.3ms)
+  Rendered home/_learn_center.html.erb (0.5ms)
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (2.6ms)
+  Rendered home/_maincontent.html.erb (5.1ms)
+  Rendered home/_footer.html.erb (0.4ms)
+  Rendered home/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 46ms (Views: 43.4ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "articles" SET "link" = $1, "updated_at" = $2 WHERE "articles"."id" = $3[0m  [["link", "https://www.autismspeaks.org/what-autism/symptoms"], ["updated_at", 2017-02-25 07:42:30 UTC], ["id", 8]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2017-02-24 23:42:32 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered home/_navbar.html.erb (2.6ms)
+  Rendered home/_learn_center.html.erb (1.3ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (7.3ms)
+  Rendered home/_maincontent.html.erb (9.3ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 67ms (Views: 48.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles/new" for ::1 at 2017-02-24 23:42:41 -0800
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
