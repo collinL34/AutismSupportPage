@@ -202,9 +202,20 @@ body,
     text-align: center;
 }
 
+.categ-card .card {
+    background-color: #3F729B;
+    margin-top: 200px;
+    border-radius: 10%;
+    width: 300px;
+    text-align: center;
+}
 
-
-
+.article-link {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
 
 
 
