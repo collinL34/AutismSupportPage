@@ -240,7 +240,11 @@ body,
     text-align: center;
 }
 
-
+.about-image {
+    width: 500px;
+    border-radius: 10px;
+    height: auto;
+}
 
 
 
