@@ -31,7 +31,7 @@
 								<!--Search form-->
 		<%= form_tag(root_path, :method => "get", id: "search-form", class:"form-inline float-lg-right") do %>
 				<%= text_field_tag :search, params[:search], placeholder: "Search Categories", class:"form-control green-text search" %>
-				<%= submit_tag "Search", :name => nil, class: 'btn btn-danger' %>
+				<%= submit_tag "Search", :name => nil, class: 'btn btn-danger btn-sm' %>
 		<% end %>
 
 	</div>
