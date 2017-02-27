@@ -5,7 +5,7 @@ body,
     height: 100%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .full-bg-img,
     .view {
         height: auto;
@@ -103,6 +103,8 @@ body,
     left: 0;
     height: 100%;
     width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 #icons-list {
@@ -159,18 +161,17 @@ body,
 
 
 #articles-carousel {
-    padding: 0 10px 30px 10px;
-    margin-top: 30px;
     text-align: center;
+    width: 500px;
+    margin-top: 30px;
 }
 
 #indicators {
-    margin-left: 150px;
+    text-align: center;
     bottom: -10px;
 }
 
 .article-img {
-    margin-left: 400px;
     height: 300px;
     width: 300px;
 }
@@ -192,6 +193,12 @@ body,
 
 .page-footer .row {
     margin-left: 200px;
+}
+
+.page-footer {
+    left: 0;
+    right: 0;
+    width: 100%;
 }
 
 .useful-links {
@@ -225,14 +232,9 @@ body,
     width: 200px;
     font-size: 15px;
 }
-
-
-
-
-
-
-
-
+.linkser {
+    margin-left: 3000px;
+}
 
 
 
