@@ -221,14 +221,24 @@ body,
 }
 
 .carder {
-    width: 500px;
+    text-align: center;
+    width: 550px;
+    height: 210px;
     margin-left: 300px;
 }
 
+.carder img {
+    padding-top: 10px;
+    margin-left: 100px;
+}
 
+#indicators {
+    margin-left: 300px;
+}
 
-
-
+.image-links {
+    text-align: center;
+}
 
 
 
