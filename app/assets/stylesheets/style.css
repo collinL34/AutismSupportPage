@@ -15,6 +15,7 @@ body,
 
 .navbar {
     background-color: transparent;
+    text-align: center;
 }
 
 .top-nav-collapse {
@@ -189,7 +190,8 @@ body,
 }
 
 .useful-links {
-    margin-left: 120px;
+    margin-left: 30px;
+    text-align: center;
 }
 
 .links {
