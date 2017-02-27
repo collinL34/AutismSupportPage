@@ -246,7 +246,9 @@ body,
     height: auto;
 }
 
-
+.learn-cards p {
+    font-size: 15px;
+}
 
 
 
