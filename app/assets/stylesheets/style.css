@@ -171,25 +171,11 @@ body,
     bottom: -10px;
 }
 
-.article-img {
-    margin-left: 400px;
-    height: 300px;
-    width: 300px;
-}
-
-.articles .item .img {
-    text-align: center;
-}
-
 #friend-img {
     margin-left: 450px;
     width: 200px;
     border-radius: 50%;
     height: 200px;
-}
-
-#circle-indicators {
-    background-color: purple;
 }
 
 .page-footer .row {
@@ -234,7 +220,10 @@ body,
     font-size: 15px;
 }
 
-
+.carder {
+    width: 500px;
+    margin-left: 300px;
+}
 
 
 

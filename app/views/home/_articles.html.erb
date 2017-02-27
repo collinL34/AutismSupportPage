@@ -18,9 +18,9 @@
           <div class="item active">
             <div class="row">
               <div class="col-sm-10">
-                <div class='card'>
+                <div class='card carder'>
                   <img src="<%= @articles.first.image_link%>" class='article-img'>
-                  <small><strong><a href="<%=@articles.first.link%>"> <%= @articles.first.title%> </a> </strong></small>
+                  <small class='linkser'><strong><a href="<%=@articles.first.link%>"> <%= @articles.first.title%> </a> </strong></small>
                 </div>
               </div>
             </div>
@@ -31,9 +31,9 @@
           <div class="item">
             <div class="row">
               <div class="col-sm-10 articles-car">
-                <div class='card'>
+                <div class='card carder'>
                   <img src="<%= article.image_link%>" class='article-img'>
-                  <small><strong><a href="<%=article.link%>" class='linkser'> <%= article.title%> </a> </strong></small>
+                  <small class='linkser'><strong><a href="<%=article.link%>"> <%= article.title%> </a> </strong></small>
                 </div>
               </div>
             </div>
