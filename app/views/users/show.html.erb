@@ -33,6 +33,7 @@
         <%= render :partial => 'articles_carousel' %>
       <% else %>
         <p>Sorry no articles to display</p>
+        <p><%= link_to 'Add an Article!', new_article_path, class: 'btn btn-warning article-link'%></p>
       <% end %>
 
       <div class="divider-new">

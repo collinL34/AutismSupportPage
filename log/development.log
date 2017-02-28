@@ -26149,3 +26149,50 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 53ms (Views: 49.2ms | ActiveRecord: 1.2ms)
 
 
+Started GET "/" for ::1 at 2017-02-27 17:41:27 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered home/_navbar.html.erb (2.0ms)
+  Rendered home/_learn_center.html.erb (0.5ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (8.6ms)
+  Rendered home/_maincontent.html.erb (10.0ms)
+  Rendered home/_footer.html.erb (0.2ms)
+  Rendered home/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 54ms (Views: 48.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/articles/new" for ::1 at 2017-02-27 17:41:32 -0800
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 41ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-27 17:54:47 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered home/_navbar.html.erb (2.2ms)
+  Rendered home/_learn_center.html.erb (0.5ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered home/_articles.html.erb (1.7ms)
+  Rendered home/_maincontent.html.erb (3.1ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 39ms (Views: 36.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/2" for ::1 at 2017-02-27 17:55:24 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user_navbar.html.erb (0.8ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 2], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 2], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 36ms (Views: 31.9ms | ActiveRecord: 0.8ms)
+
+
