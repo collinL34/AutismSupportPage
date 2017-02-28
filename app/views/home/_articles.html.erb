@@ -39,11 +39,17 @@
                   
                   <img src="<%= article.image_link%>" class='article-img'>
                   <small><strong><a href="<%=article.link%>"> <%= article.title%> </a> </strong></small>
+                  <div class='row'>
+                    <div class='col-sm-10'>
+                      <a href='article.author'><%= article.author %></a>
+                    </div>
+                  </div>
                 </section>
                 </div>
               </div>
             </div>
           </div>
+
 
         <% end %>
           

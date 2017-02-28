@@ -143,7 +143,7 @@ body,
 
 .testimonial-card {
     text-align: center;
-    height: 1500px;
+    height: 1600px;
 }
 
 .carousel-item .testimonial-card {
@@ -225,7 +225,7 @@ body,
 .carder {
     text-align: center;
     width: 550px;
-    height: 280px;
+    height: 380px;
     margin-left: 300px;
 }
 
@@ -233,6 +233,8 @@ body,
     padding-bottom: 20px;
     padding-top: 10px;
     margin-left: 100px;
+    width: 300px;
+    height: auto;
 }
 
 #indicators {
