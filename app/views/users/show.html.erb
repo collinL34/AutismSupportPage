@@ -46,7 +46,7 @@
       </div>
 
       <%= form_for @friendship do |f| %>
-        <%= f.submit 'Friend Me!', name: :user_id, value: @user.id, class: 'btn btn-primary' %>
+        <%= f.button  :submit => 'Friend Me!', name: :user_id, value: @user.id, class: 'btn btn-primary'%>
       <% end %>
 
 
