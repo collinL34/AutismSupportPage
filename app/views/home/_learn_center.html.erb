@@ -5,7 +5,21 @@
         <hr class="hr-dark">
         <p class="wow fadeInLeft" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae, quisquam iste, maiores. Nulla.</p>
         <br>
-        <a class="btn btn-primary wow fadeInLeft" data-wow-delay="0.7s">Learn more</a>
+        <a href='#best-features' class="btn btn-primary wow fadeInLeft" data-wow-delay="0.7s">Learn more</a>
     </div>
 </div>
 <!--/.First column-->
+<div class="col-lg-6 categ-card">
+  <div class='card'>
+    <% if !@category.nil? %>
+      <% if @category.name != 'Category'%>
+    
+          <ul>
+            <% @category.articles.each do |article| %>
+              <li class='article-link'><a href='<%= article.link %>' class='amber-text'><%= article.title %></a></li>
+            <%end %>
+          </ul>
+      <%end%>
+    <% end %>
+  </div>
+</div>

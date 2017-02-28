@@ -1,1 +1,56 @@
-<p>h</p>
+<%= render :partial => 'user_navbar' %>
+
+<!--Card-->
+<div class='container profile-container'>
+  <div class="card testimonial-card">
+      <h4><%= @user.full_name%></h4>
+
+      <% if !@user.profile_img.nil? %>
+        <div class="avatar">
+          <img src="<%=@user.profile_img%>" class="rounded-circle img-responsive profile">
+        </div>
+
+      <% else %>
+        <%= render :partial => 'profile_img'%>
+      <% end %>
+
+        <div class="divider-new">
+          <h2 class="h2-responsive wow fadeInDown">Friends</h2>
+        </div>
+
+      <% if !@friends.empty? %>
+        <%= render :partial => 'friends_carousel' %>
+      <% else %>
+        <p>Sorry no friends maybe go make some</p>
+      <% end %>
+        
+
+      <div class="divider-new">
+        <h2 class="h2-responsive wow fadeInDown">Articles</h2>
+      </div>
+
+      <% if !@articles.empty?%>
+        <%= render :partial => 'articles_carousel' %>
+      <% else %>
+        <p>Sorry no articles to display</p>
+        <p><%= link_to 'Add an Article!', new_article_path, class: 'btn btn-warning article-link'%></p>
+      <% end %>
+
+      <div class="divider-new">
+          <h2 class="h2-responsive wow fadeInDown">Edit Your Profile</h2>
+      </div>
+
+      <%= link_to 'Edit Profile', edit_user_path(@user), class: 'btn btn-primary btn-lg secondary-color'%>
+      
+      <div class="divider-new">
+          <h2 class="h2-responsive wow fadeInDown">Add as Friend</h2>
+      </div>
+
+      <%= form_for @friendship do |f| %>
+        <%= f.button  :submit => 'Friend Me!', name: :user_id, value: @user.id, class: 'btn btn-primary'%>
+      <% end %>
+
+
+  </div>
+  <!--/.Card-->
+</div>

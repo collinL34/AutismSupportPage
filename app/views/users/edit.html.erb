@@ -1,0 +1,33 @@
+<div class='container'> 
+    <h4 style='text-align: center'>Edit your Account here!</h4>
+    <div class="card wow fadeInRight new-card">
+        <div class="card-block">
+
+            <%= form_for @user, class: 'md-form' do |f| %>
+
+                <% if @user.errors.any? %>
+                  <div id="error_explanation">
+                    <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+                    <ul>
+                      <% @user.errors.full_messages.each do |message| %>
+                          <li><%= message %></li>
+                      <% end %>
+                    </ul>
+                  </div>
+                <% end %>
+                
+                <%= f.text_field :first_name, placeholder:'First Name', class: 'form-control'%>
+                <%= f.text_field :last_name, placeHolder: 'Last Name', class: 'form-control'%>
+                <%= f.text_field :address, placeHolder: 'Address', class: 'form-control'%>
+                <%= f.text_field :city, placeHolder:'City', class: 'form-control'%>
+                <%= f.text_field :state, placeHolder:'State', class: 'form-control'%>
+                <%= f.text_field :zip_code, placeHolder:'Zip Code', class: 'form-control'%>
+                <i class="fa fa-envelope prefix"></i>
+                <%= f.text_field :email, placeholder: 'Email', class: 'form-control'%>
+                <%= f.submit 'Edit', class: "btn btn-primary btn-lg warning-color" %>
+            <% end%>
+            <%= link_to 'Back', :back, class: 'btn btn-primary btn-lg warning-color'%>
+        </div>
+    </div>
+</div>

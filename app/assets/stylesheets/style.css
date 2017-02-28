@@ -1,17 +1,8 @@
 html,
 body,
+
 .view {
     height: 100%;
-}
-
-/*Intro*/
-
-.view {
-    background: url("http://mdbootstrap.com/images/regular/city/img%20(6).jpg")no-repeat center center fixed;
-        -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 @media (max-width: 768px) {
@@ -22,10 +13,9 @@ body,
     }
 }
 
-/* Navigation*/
-
 .navbar {
     background-color: transparent;
+    text-align: center;
 }
 
 .top-nav-collapse {
@@ -58,13 +48,17 @@ body,
 .full-bg-img {
     position: absolute;
 }
-.full-bg-img, .view .content, .view .mask {
+
+.full-bg-img,
+.view .content,
+.view .mask {
     overflow: hidden;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
 }
+
 .view {
     background: url("https://images.unsplash.com/photo-1481679115566-7aeae7543b52?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=")no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -81,7 +75,7 @@ body,
 .new-card {
     position: relative;
     margin-top: 50px;
-    height: 660px;
+    height: 160px;
 }
 
 .card img {
@@ -98,16 +92,20 @@ body,
     height: auto;
 }
 
-
 .full-bg-img {
     position: absolute;
 }
-.full-bg-img, .view .content, .view .mask {
+
+.full-bg-img,
+.view .content,
+.view .mask {
     overflow: hidden;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 #icons-list {
@@ -131,18 +129,142 @@ body,
     margin-top: 70px;
 }
 
+.new-form {
+    text-align: center;
+}
+
+.avatar .profile {
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 460px;
+    width: 220px;
+    height: 220px;
+}
+
+.testimonial-card {
+    text-align: center;
+    height: 1500px;
+}
+
+.carousel-item .testimonial-card {
+    height: 200px;
+}
+
+.login-card {
+    height: 300px;
+}
+
+#friends-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+    text-align: center;
+}
 
 
+#articles-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+    text-align: center;
+}
 
+#indicators {
+    margin-left: 150px;
+    bottom: -10px;
+}
 
+#friend-img {
+    margin-left: 450px;
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+}
 
+.page-footer .row {
+    margin-left: 200px;
+}
 
+.page-footer {
+    left: 0;
+    right: 0;
+    width: 100%;
+}
 
+.useful-links {
+    margin-left: 30px;
+    text-align: center;
+}
 
+.links {
+    text-align: center;
+}
 
+.categ-card .card {
+    background-color: #3F729B;
+    margin-top: 200px;
+    border-radius: 10%;
+    width: 300px;
+    text-align: center;
+}
 
+.article-link {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
 
+#testimonials .article-link {
+    margin-left: 500px;
+}
 
+#search {
+    width: 200px;
+    font-size: 15px;
+}
+
+.carder {
+    text-align: center;
+    width: 550px;
+    height: 280px;
+    margin-left: 300px;
+}
+
+.carder img {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-left: 100px;
+}
+
+#indicators {
+    padding-left: 290px;
+}
+
+.image-links {
+    text-align: center;
+}
+
+.about-image {
+    width: 550px;
+    border-radius: 10px;
+    height: auto;
+}
+
+.learn-cards p {
+    font-size: 15px;
+}
+
+.learn-cards img {
+    width: 1000px;
+    height: 300px;
+}
+
+.autism-society {
+    margin-top: -50px;
+}
+
+.autism-res-links {
+    margin-top: -50px;
+}
 
 
 
