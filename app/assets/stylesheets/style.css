@@ -244,7 +244,7 @@ body,
 }
 
 .about-image {
-    width: 550px;
+    width: 500px;
     border-radius: 10px;
     height: auto;
 }
@@ -254,8 +254,8 @@ body,
 }
 
 .learn-cards img {
-    width: 1000px;
-    height: 300px;
+    width: 800px;
+    height: 200px;
 }
 
 .autism-society {
