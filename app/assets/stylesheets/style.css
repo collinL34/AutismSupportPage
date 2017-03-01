@@ -160,6 +160,16 @@ body,
     text-align: center;
 }
 
+#articles-carousel img {
+    margin-left: 460px;
+    width: 200px;
+    height: auto;
+}
+
+#articles-carousel .card {
+    height: 130px;
+}
+
 #friends-carousel #indicators {
     margin-left: 10px;
     margin-bottom: -20px;
