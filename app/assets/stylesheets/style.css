@@ -15,7 +15,7 @@ body,
 
 .navbar {
     background-color: transparent;
-    text-align: center;
+    text-align: right;
 }
 
 .top-nav-collapse {
@@ -167,7 +167,7 @@ body,
 }
 
 #articles-carousel .card {
-    height: 130px;
+    height: 140px;
 }
 
 #friends-carousel #indicators {
@@ -289,8 +289,6 @@ body,
 .about p {
     font-size: 15px;
 }
-
-
 
 
 
