@@ -228,7 +228,7 @@ body,
 }
 
 #testimonials .article-link {
-    margin-left: 500px;
+    margin-left: 530px;
 }
 
 #search {
@@ -289,6 +289,24 @@ body,
 .about p {
     font-size: 15px;
 }
+
+#articles .card {
+    height: 350px;
+    text-align: center;
+}
+
+#articles img {
+    margin-top: 30px
+}
+
+
+
+
+
+
+
+
+
 
 
 
