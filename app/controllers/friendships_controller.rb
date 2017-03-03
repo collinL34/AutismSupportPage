@@ -9,8 +9,6 @@ class FriendshipsController < ApplicationController
       user = User.find(session[:user_id])
       friend = User.find(params[:user_id])
 
-      p '#################################'
-
       friendship = Friendship.new(user_id: user.id, friend_id: friend.id)
 
       if friendship.save

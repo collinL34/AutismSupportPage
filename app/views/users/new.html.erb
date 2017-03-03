@@ -3,20 +3,19 @@
     <div class="card wow fadeInRight new-card">
         <div class="card-block">
 
-            <%= form_for @user, class: 'md-form' do |f| %>
 
-                <% if @user.errors.any? %>
-                  <div id="error_explanation">
-                    <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
-
-                    <ul>
-                      <% @user.errors.full_messages.each do |message| %>
-                          <li><%= message %></li>
-                      <% end %>
-                    </ul>
-                  </div>
+            <%= form_for @user, class: 'md-forming someth' do |f| %>
+            <% if @user.errors.any? %>
+              <div id="error_explanation">
+                <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+                <ul>
+                <% @user.errors.full_messages.each do |msg| %>
+                  <li><%= msg %></li>
                 <% end %>
-                
+                </ul>
+              </div>
+            <% end %>
+
                 <%= f.text_field :first_name, placeholder:'First Name', class: 'form-control'%>
                 <%= f.text_field :last_name, placeHolder: 'Last Name', class: 'form-control'%>
                 <%= f.text_field :address, placeHolder: 'Address', class: 'form-control'%>
@@ -25,9 +24,10 @@
                 <%= f.text_field :zip_code, placeHolder:'Zip Code', class: 'form-control'%>
                 <i class="fa fa-envelope prefix"></i>
                 <%= f.text_field :email, placeholder: 'Email', class: 'form-control'%>
-                <i class="fa fa-lock prefix"></i>
+                <i class="fa &#x1F618;lock prefix"></i>
                 <%= f.text_field :password, placeholder: 'password', class: 'form-control'%>
                 <%= f.submit 'Sign up', class: "btn btn-primary btn-lg warning-color" %>
+                <%= link_to 'Home', :root, class: 'btn btn-primary btn-lg' %>
             <% end%>
         </div>
     </div>
