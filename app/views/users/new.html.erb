@@ -3,7 +3,7 @@
     <div class="card wow fadeInRight new-card">
         <div class="card-block">
 
-            <%= form_for @user, class: 'md-form' do |f| %>
+            <%= form_for @user, class: 'md-forming someth' do |f| %>
 
                 <% if @user.errors.any? %>
                   <div id="error_explanation">
@@ -25,7 +25,7 @@
                 <%= f.text_field :zip_code, placeHolder:'Zip Code', class: 'form-control'%>
                 <i class="fa fa-envelope prefix"></i>
                 <%= f.text_field :email, placeholder: 'Email', class: 'form-control'%>
-                <i class="fa fa-lock prefix"></i>
+                <i class="fa &#x1F618;lock prefix"></i>
                 <%= f.text_field :password, placeholder: 'password', class: 'form-control'%>
                 <%= f.submit 'Sign up', class: "btn btn-primary btn-lg warning-color" %>
             <% end%>
