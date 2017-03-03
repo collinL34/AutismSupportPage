@@ -21,7 +21,11 @@
                 <div class='card carder'>
                 <section class="image-links">
 
-                  <a href='@articles.first.author'><%= @articles.first.author.full_name %></a>
+                  <a href='@articles.first.author' class='art-author'><%= @articles.first.author.full_name %></a>
+
+                  <% if !@articles.first.body.nil? %>
+                    <p class='green-text'><%= @articles.first.body %></p>  
+                  <% end %>
 
                   <img src="<%= @articles.first.image_link%>" class='article-img'>
                   <small><strong><a href="<%=@articles.first.link%>"> <%= @articles.first.title%> </a> </strong></small>
@@ -39,7 +43,10 @@
                 <div class='card carder'>
                 <section class="image-links">
 
-                  <a href='article.author'><%= article.author.full_name %></a>
+                  <a href='article.author' class='art-author'> <%= article.author.full_name %> </a>
+                  <% if !article.body.nil? %>
+                    <p><%= @articles.first.body %></p>
+                  <%end%>
 
                   <img src="<%= article.image_link%>" class='article-img'>
                   <small><strong><a href="<%=article.link%>"> <%= article.title%> </a> </strong></small>
