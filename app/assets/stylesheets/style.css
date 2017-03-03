@@ -75,7 +75,11 @@ body,
 .new-card {
     position: relative;
     margin-top: 50px;
-    height: 160px;
+    height: 500px;
+}
+
+.new-card .form-control {
+    font-size: 15px;
 }
 
 .card img {
