@@ -42,11 +42,11 @@
 
       <%= link_to 'Edit Profile', edit_user_path(@user), class: 'btn btn-primary btn-lg secondary-color'%>
       
-      <div class="divider-new">
-          <h2 class="h2-responsive wow fadeInDown">Add as Friend</h2>
-      </div>
 
-      <% if !session[:user_id].nil? && params[:id] != session[:user_id] %>
+      <% if @user.id != session[:user_id] %>
+        <div class="divider-new">
+            <h2 class="h2-responsive wow fadeInDown">Add as Friend</h2>
+        </div>
 
         <%= form_for @friendship do |f| %>
           <%= f.button  :submit => 'Friend Me!', name: :user_id, value: @user.id, class: 'btn btn-primary'%>
