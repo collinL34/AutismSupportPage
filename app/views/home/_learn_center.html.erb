@@ -11,15 +11,20 @@
 <!--/.First column-->
 <div class="col-lg-6 categ-card">
   <div class='card'>
-    <% if !@category.nil? %>
-      <% if @category.name != 'Category'%>
-    
-          <ul>
-            <% @category.articles.each do |article| %>
-              <li class='article-link'><a href='<%= article.link %>' class='amber-text'><%= article.title %></a></li>
-            <%end %>
-          </ul>
+    <% if !@category.nil? && @category.name != 'Category'%>
+
+      <% if @category.articles.empty? %>
+        <p class='white-text'>No articles Posted under this category maybe you want to post one?</p>
+      <% else %>
+
+        <ul>
+          <% @category.articles.each do |article| %>
+            <li class='article-link'><a href='<%= article.link %>' class='amber-text'><%= article.title %></a></li>
+          <%end %>
+        </ul>
+
       <%end%>
+      
     <% end %>
   </div>
 </div>
