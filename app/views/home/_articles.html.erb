@@ -21,7 +21,7 @@
                 <div class='card carder'>
                 <section class="image-links">
 
-                  <a href='@articles.first.author' class='art-author'><%= @articles.first.author.full_name %></a>
+                  <a href='<%@articles.first.author%>' class='art-author'><%= @articles.first.author.full_name %></a>
 
                   <% if !@articles.first.body.nil? %>
                     <p class='green-text'><%= @articles.first.body %></p>  
