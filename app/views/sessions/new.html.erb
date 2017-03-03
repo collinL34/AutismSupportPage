@@ -3,12 +3,17 @@
     <div class="card wow fadeInRight login-card">
         <div class="card-block">
 
+            <% if flash[:error]%>
+              <h5 class='red-text' ><%= flash[:error] %></h5>
+            <% end %>
+
             <%= form_tag '/login', class: 'mg-form' do %>
                 <i class="fa fa-envelope prefix"></i>
                 <%= text_field_tag :email %>
                 <i class="fa fa-lock prefix"></i>
                 <%= password_field_tag :password %>
                 <%= submit_tag "Submit",class: "btn btn-primary btn-lg warning-color" %>
+                <%= link_to 'Home', :root, class: 'btn btn-primary btn-lg' %>
             <% end %>
 
         </div>
