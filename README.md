@@ -23,22 +23,19 @@ Main Key features of WebPage/ users stories
 Site Tech Stack
 
   - Rails 5 (back-end/front-end)
-  - AngularJs (front-end)
   - PostGres db
   - Heroku
   - Travis Ci
   - Javascript
   - Html 5 && css 3
   - Bootstrap 4
-  - Symantic ui
   
 Home Page Design
   
   - Header shows links to rest of page login, logout, register, users show page, articles, contact
   - Website title
-  - Top 5 current articles
-  - Count of users signed in
-  - Possible daily changing inspirational quote
+  - Shows current articles
+  - Has links and description of other autism support websites
   
 Users Show Page
 
@@ -49,7 +46,6 @@ Users Show Page
   
 Users Post Page
 
-  - Comments from users on specific post
   - Link and image corresponding to link or article
  
 Article Show Page 
