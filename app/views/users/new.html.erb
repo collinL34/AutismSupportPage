@@ -25,7 +25,7 @@
                 <i class="fa fa-envelope prefix"></i>
                 <%= f.text_field :email, placeholder: 'Email', class: 'form-control'%>
                 <i class="fa &#x1F618;lock prefix"></i>
-                <%= f.text_field :password, placeholder: 'password', class: 'form-control'%>
+                <%= f.password_field :password, placeholder: 'password', class: 'form-control'%>
                 <%= f.submit 'Sign up', class: "btn btn-primary btn-lg warning-color" %>
                 <%= link_to 'Home', :root, class: 'btn btn-primary btn-lg' %>
             <% end%>
