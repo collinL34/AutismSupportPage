@@ -35735,6 +35735,7 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 48ms (Views: 44.3ms | ActiveRecord: 1.7ms)
 
 
+<<<<<<< HEAD
 Started GET "/?utf8=%E2%9C%93&search=Test" for ::1 at 2017-03-22 15:04:57 -0700
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by HomeController#index as HTML
@@ -35987,3 +35988,8 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 97ms (Views: 82.2ms | ActiveRecord: 7.3ms)
 
 
+=======
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" ORDER BY "categories"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" ORDER BY "categories"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 1]]
+>>>>>>> 5ed5e942ecc1a198321fb6e09ca2d0a7bc4a5fa3
