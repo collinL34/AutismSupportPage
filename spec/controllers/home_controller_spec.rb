@@ -19,7 +19,7 @@ RSpec.describe HomeController, type: :controller do
     end
 
     it 'returns the correct articles by category'
-
+      
   end
 
 end
