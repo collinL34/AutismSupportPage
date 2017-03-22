@@ -18,8 +18,10 @@ RSpec.describe HomeController, type: :controller do
       expect(assigns(:articles)).to eq(Article.all)
     end
 
-    it 'returns the correct articles by category'
-      
+    it 'returns the articles by search category' do 
+      get :index, params: { search: { name: 'Test' } }
+      expect(assigns(:category)).to be_a Category
+    end
+    
   end
-
 end
