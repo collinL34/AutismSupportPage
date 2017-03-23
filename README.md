@@ -21,31 +21,30 @@ Site Tech Stack
   - PostGres db
   - Heroku
   - Travis Ci
+  - Rails Rspec testing
   - Javascript
+  - Material Design for Bootstrap 4 & 3
   - Html 5 && css 3
   - Bootstrap 4
   
 Home Page Design
   
-  - Header shows links to rest of page login, logout, register, users show page, articles, contact
+  - Header shows links to rest of page login, logout, register, users show page, search for specific categories
   - Website title
   - Shows current articles
   - Has links and description of other autism support websites
+  - Has Description about the autismtalks website
   
 Users Show Page
 
-  - Image viewing link
-  - Users info some obscured  
+  - Profile image
   - Users most recient posts
   - Users friends list
+  - users full name and link to edit their personal info
   
 Users Post Page
 
   - Link and image corresponding to link or article
- 
-Article Show Page 
-  
-  - Users can search through articles for specific keywords to find the info they need
   
   
   
