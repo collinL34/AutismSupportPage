@@ -3,12 +3,7 @@
 Webiste for autistic children and their parents
 
 Introduction: 
-  This website is for the friends and family of autistic children. To help inform them of how to help better support their 
-childrenlearning. This website is besed off of the idea that family and friends can speak and share stories and advice about 
-their own experiences for others to read or contact them if they choose to allow it. Or the users can post anonymously, if they 
-choose too. The hope with this website is to have a place for those who are struggling with autism to have a place to oppenly 
-speak about their stories and find helpful information to help better their's and thier 
-friends and families lifes.
+  This website is for the friends and family of autistic children. To help inform them of how to help better support their children learning. This website is based off of the idea that family and friends can speak and share stories and advice about their own experiences for others to read or contact them if they choose to allow it. Or the users can post anonymously, if they choose too. The hope with this website is to have a place for those who are struggling with autism to have a place to openly speak about their stories and find helpful information to help better their's and their friends and families lives.
 
 Main Key features of WebPage/ users stories
 
