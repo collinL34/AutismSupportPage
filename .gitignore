@@ -11,12 +11,12 @@
 /log/*
 /tmp/*
 !/log/.keep
-!/tmp/.keep
 log/development.log
+!/tmp/.keep
 
 # Ignore Byebug command history file.
 .byebug_history
-.env
+
 
     Contact GitHub API Training Shop Blog About 
 

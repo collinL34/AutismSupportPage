@@ -36477,3 +36477,401 @@ Completed 200 OK in 373ms (Views: 319.5ms | ActiveRecord: 8.3ms)
 =======
 >>>>>>> 6b196e1583cc554e080704a7f5e5ba8bc80d6d59
 >>>>>>> 5864b41f615e46284a2bf4587a6120f0022922c1
+Started GET "/" for ::1 at 2017-03-31 16:37:28 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (3.2ms)
+  Rendered home/_learn_center.html.erb (0.6ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/_articles.html.erb (39.4ms)
+  Rendered home/_maincontent.html.erb (40.8ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (49.5ms)
+Completed 200 OK in 341ms (Views: 291.9ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/users/new" for ::1 at 2017-03-31 16:37:32 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-03-31 16:37:44 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8nzpy53M3b6amZf6QubSNryyJ3JH/0csivynpd2L9PbT+Jf8uECx9Da47g7XOyZ2swRQ8GuACmVherVaP8QFQg==", "user"=>{"first_name"=>"v", "last_name"=>"", "address"=>"", "city"=>"", "state"=>"", "zip_code"=>"93707", "email"=>"c@co.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (8.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "c@co.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 173ms (Views: 76.5ms | ActiveRecord: 8.6ms)
+
+
+Started POST "/users" for ::1 at 2017-03-31 16:37:49 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MnU/A1jB6h8svsEqXTYKZzSZc3eftMA1MBsxUNf4WIAT8UE0fU2GVYCfuN7I6/4nOy8E9bPLjXzbnSOvNbepNA==", "user"=>{"first_name"=>"v", "last_name"=>"h", "address"=>"", "city"=>"", "state"=>"", "zip_code"=>"93707", "email"=>"c@co.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "c@co.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 42ms (Views: 38.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for ::1 at 2017-03-31 16:37:53 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qjSCdzVlPQpwm+qQg0CY0arDCcbIQw5e7V3ZDqVmcTmLsPxAEOlRQNy6k2QWnWyRpXV+ROQ8QxcG28vxRymAjQ==", "user"=>{"first_name"=>"v", "last_name"=>"h", "address"=>"", "city"=>"", "state"=>"", "zip_code"=>"93707", "email"=>"c@co.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "c@co.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "address", "zip_code", "city", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["first_name", "v"], ["last_name", "h"], ["email", "c@co.com"], ["password_digest", "$2a$10$bSpgmmzum2bGyDPPi2w0LeyppcJ0MxfevpKA73Jl3.yfPTlrFq5Ly"], ["address", ""], ["zip_code", 93707], ["city", ""], ["state", ""], ["created_at", 2017-03-31 23:37:53 UTC], ["updated_at", 2017-03-31 23:37:53 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/12
+Completed 302 Found in 77ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/users/12" for ::1 at 2017-03-31 16:37:53 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered users/_user_navbar.html.erb (2.1ms)
+  Rendered users/_profile_img.html.erb (1.7ms)
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 12], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 113ms (Views: 78.3ms | ActiveRecord: 7.7ms)
+
+
+Started PATCH "/users/12" for ::1 at 2017-03-31 16:37:57 -0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"allfTL5/07/4EOBaEj+beZEwJ0R1FReDoIfOx/GzbtRL3SF7m/O/9VQxma6H4m85noZQxllqWspLAdw4E/yfYA==", "user"=>{"profile_img"=>""}, "commit"=>"Add a link", "id"=>"12"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND ("users"."id" != $2) LIMIT $3[0m  [["email", "c@co.com"], ["id", 12], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "profile_img" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["profile_img", ""], ["updated_at", 2017-03-31 23:37:57 UTC], ["id", 12]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/12
+Completed 302 Found in 9ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/users/12" for ::1 at 2017-03-31 16:37:57 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered users/_user_navbar.html.erb (2.6ms)
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 12], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 77ms (Views: 69.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/logout" for ::1 at 2017-03-31 16:38:04 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-31 16:38:04 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (2.2ms)
+  Rendered home/_learn_center.html.erb (0.7ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/_articles.html.erb (18.2ms)
+  Rendered home/_maincontent.html.erb (19.8ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 69ms (Views: 66.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-03-31 16:38:05 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.8ms)
+  Rendered home/_learn_center.html.erb (0.4ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/_articles.html.erb (16.3ms)
+  Rendered home/_maincontent.html.erb (17.7ms)
+  Rendered home/_footer.html.erb (0.5ms)
+  Rendered home/index.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 64ms (Views: 60.9ms | ActiveRecord: 1.0ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 12]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2017-03-31 16:38:56 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (4.1ms)
+  Rendered home/_learn_center.html.erb (0.6ms)
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/_articles.html.erb (41.2ms)
+  Rendered home/_maincontent.html.erb (43.0ms)
+  Rendered home/_footer.html.erb (1.5ms)
+  Rendered home/index.html.erb within layouts/application (55.1ms)
+Completed 200 OK in 392ms (Views: 330.2ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/users/new" for ::1 at 2017-03-31 16:39:00 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 40ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-03-31 16:39:09 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T04ohuQEZnHoscGvWgUj8UTqTNO39sE4wDl/IZF7SQBuylaxwYgKO0SQuFvP2NexS1w7UZuJjHErv23eczS4tA==", "user"=>{"first_name"=>"c", "last_name"=>"c", "address"=>"", "city"=>"", "state"=>"", "zip_code"=>"434", "email"=>"@s@.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "@s@.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "address", "zip_code", "city", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["first_name", "c"], ["last_name", "c"], ["email", "@s@.com"], ["password_digest", "$2a$10$a2SiIEPtA3j/k/QYqv3vQ.Tyq59vAVAFIYOT2njPDDKPc8XDTxhfq"], ["address", ""], ["zip_code", 434], ["city", ""], ["state", ""], ["created_at", 2017-03-31 23:39:09 UTC], ["updated_at", 2017-03-31 23:39:09 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/13
+Completed 302 Found in 82ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/users/13" for ::1 at 2017-03-31 16:39:09 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendered users/_user_navbar.html.erb (3.1ms)
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 13], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 13], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 84ms (Views: 52.0ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/users/13" for ::1 at 2017-03-31 16:39:19 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendered users/_user_navbar.html.erb (2.2ms)
+  Rendered users/_profile_img.html.erb (1.3ms)
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 13], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 13], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 67ms (Views: 60.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/13" for ::1 at 2017-03-31 16:40:10 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendered users/_user_navbar.html.erb (1.7ms)
+  Rendered users/_profile_img.html.erb (1.0ms)
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 13], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 13], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 43ms (Views: 37.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/13" for ::1 at 2017-03-31 16:40:19 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendered users/_user_navbar.html.erb (1.8ms)
+  Rendered users/_profile_img.html.erb (1.1ms)
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 13], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 13], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 37ms (Views: 32.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/13" for ::1 at 2017-03-31 16:40:27 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendered users/_user_navbar.html.erb (2.1ms)
+  Rendered users/_profile_img.html.erb (1.0ms)
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 13], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 13], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 35ms (Views: 30.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/13" for ::1 at 2017-03-31 16:40:36 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendered users/_user_navbar.html.erb (2.0ms)
+  Rendered users/_profile_img.html.erb (0.8ms)
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 13], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 13], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 39ms (Views: 34.7ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/users/13" for ::1 at 2017-03-31 16:41:02 -0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gJSRux7HSTxdkDQ0S61io5kFV6+gd22KlE1EdahoYYChEO+MO0sldvGxTcDecJbjlrMgLYwIIMN/y1aKSieQNA==", "user"=>{"profile_img"=>"data:image/jpeg;base64,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"}, "commit"=>"Add a link", "id"=>"13"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND ("users"."id" != $2) LIMIT $3[0m  [["email", "@s@.com"], ["id", 13], ["LIMIT", 1]]
+  [1m[35mSQL (1.5ms)[0m  [1m[33mUPDATE "users" SET "profile_img" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["profile_img", "data:image/jpeg;base64,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"], ["updated_at", 2017-03-31 23:41:02 UTC], ["id", 13]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/13
+Completed 302 Found in 16ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/users/13" for ::1 at 2017-03-31 16:41:02 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendered users/_user_navbar.html.erb (1.9ms)
+  [1m[36mUser Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 13], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 13], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 43ms (Views: 37.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/users/13" for ::1 at 2017-03-31 16:41:24 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendered users/_user_navbar.html.erb (4.3ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 13], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 13], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 346ms (Views: 281.0ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/logout" for ::1 at 2017-03-31 16:41:26 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-31 16:41:26 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.9ms)
+  Rendered home/_learn_center.html.erb (0.5ms)
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/_articles.html.erb (35.2ms)
+  Rendered home/_maincontent.html.erb (36.9ms)
+  Rendered home/_footer.html.erb (0.5ms)
+  Rendered home/index.html.erb within layouts/application (42.7ms)
+Completed 200 OK in 104ms (Views: 95.6ms | ActiveRecord: 5.2ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 13]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m

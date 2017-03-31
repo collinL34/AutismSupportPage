@@ -75,7 +75,7 @@ body,
 .new-card {
     position: relative;
     margin-top: 50px;
-    height: 5000px;
+    height: 150px;
 }
 
 .new-card .form-control {
