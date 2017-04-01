@@ -23,7 +23,7 @@
 
                   <%= link_to "Posted by: #{@articles.first.author.full_name}", user_path(@articles.first.author.id), class: 'green-text art-author' %>
 
-                  <img src="<%= @articles.first.image_link%>" class='article-img'>
+                  <img src="<%= @articles.first.image_link%>" class='article-img' alt="First sample avatar image">
                   <small><strong><a href="<%=@articles.first.link%>"> <%= @articles.first.title%> </a> </strong></small>
                 </section>
                 </div>
@@ -41,7 +41,7 @@
 
                   <%= link_to "Posted by: #{article.author.full_name}", user_path(article.author.id), class: 'green-text art-author' %>
 
-                  <img src="<%= article.image_link%>" class='article-img'>
+                  <img src="<%= article.image_link%>" class='article-img' alt="First sample avatar image">
                   <small><strong><a href="<%=article.link%>"> <%= article.title%> </a> </strong></small>
                   <div class='row'>
                   </div>

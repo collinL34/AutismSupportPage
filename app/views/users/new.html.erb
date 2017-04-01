@@ -1,13 +1,13 @@
 <div class='container'> 
     <h4 style='text-align: center'>Create An Account Today!</h4>
-    <div class="card wow fadeInRight new-card">
+    <div class="card wow fadeInRight new-user-card">
         <div class="card-block">
 
 
             <%= form_for @user, class: 'md-forming someth' do |f| %>
             <% if @user.errors.any? %>
               <div id="error_explanation">
-                <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+                <h2 class="red-text"><p class="red-text"><%= pluralize(@user.errors.count, "error") %></p> prohibited this user from being saved:</h2>
                 <ul>
                 <% @user.errors.full_messages.each do |msg| %>
                   <li><%= msg %></li>
