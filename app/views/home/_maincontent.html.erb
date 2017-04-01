@@ -1,8 +1,8 @@
 <!--Main container-->
-<div class="container">
+<div class="container wow fadeInUp" data-wow-delay="0.2s">
 
     <div class="divider-new">
-        <h2 class="h2-responsive wow fadeInDown">Learn</h2>
+        <h2 class="h2-responsive wow fadeInDown" data-wow-delay="0.5s">Learn</h2>
     </div>
     
     <!--Section: Best features-->
@@ -116,8 +116,7 @@
     <!--Section: Additional features-->
     <section id="additional-features">
 
-        <div class="row">
-            <!--First columnn-->
+        <div class="row wow fadeInRight" data-wow-delay='0.5s'>
             <div class="col-md-6">
                 <p class='about-aut'>Autism, or autism spectrum disorder, refers to a range of conditions characterized by challenges with social skills, repetitive behaviors, speech and nonverbal communication, as well as by unique strengths and differences. We now know that there is not one autism but many types, caused by different combinations of genetic and environmental influences.</p>
 
@@ -125,20 +124,16 @@
 
                 <p class='about-aut'>Autism’s most-obvious signs tend to appear between 2 and 3 years of age. In some cases, it can be diagnosed as early as 18 months. Some developmental delays associated with autism can be identified and addressed even earlier. Autism Speaks urges parents with concerns to seek     evaluation without delay, as early intervention can improve outcomes.</p>
             </div>
-            <!--First columnn-->
 
             <div class="col-md-6">
                 <img src="https://images.unsplash.com/photo-1467307983825-619715426c70?dpr=2&auto=format&fit=crop&w=1500&h=1120&q=80&cs=tinysrgb&crop=" class="about-image">
             </div>
         </div>
     </section>
-    <!--/Section: Additional features-->
 
     <div class="divider-new">
         <h2 class="h2-responsive wow fadeInDown">Articles</h2>
     </div>
-
-    <!--Section: Testimonials-->
     <section id="testimonials">
         <div class="row">
             <%= render :partial => 'articles' %>
@@ -147,8 +142,6 @@
             <% end %>
         </div>
     </section>
-    <!--/Section: Testimonials-->
     <br>
 
 </div>
-<!--/Main container-->
