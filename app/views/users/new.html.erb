@@ -4,7 +4,7 @@
         <div class="card-block">
 
 
-            <%= form_for @user, class: 'md-forming someth' do |f| %>
+            <%= form_for @user, class: 'md-forming' do |f| %>
             <% if @user.errors.any? %>
               <div id="error_explanation">
                 <h2 class="red-text"><p class="red-text"><%= pluralize(@user.errors.count, "error") %></p> prohibited this user from being saved:</h2>
