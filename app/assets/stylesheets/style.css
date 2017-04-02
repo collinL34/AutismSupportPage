@@ -81,7 +81,7 @@ body,
 .new-user-card {
     position: relative;
     margin-top: 50px;
-    height: 1000px;
+    height: 500px;
 }
 
 .new-card .form-control {
