@@ -1,4 +1,3 @@
-<!--First column-->
 <div class="col-lg-6">
     <div class="description wow">
         <h2 class="orange-text h2-responsive wow fadeInLeft">Welcome to Autism Talks</h2>
@@ -8,13 +7,12 @@
         <a href='#best-features' class="btn btn-primary wow fadeInLeft learn-button" data-wow-delay="0.7s">Learn more</a>
     </div>
 </div>
-<!--/.First column-->
 <div class="col-lg-6 categ-card">
   <div class='card'>
     <% if !@category.nil? && @category.name != 'Category'%>
 
       <% if @category.articles.empty? %>
-        <p class='white-text'>No articles Posted under this category maybe you want to post one?</p>
+        <p class='amber-text'>There are no articles posted under this category. Maybe you want to post one?</p>
       <% else %>
 
         <ul>
