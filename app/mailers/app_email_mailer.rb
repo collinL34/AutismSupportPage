@@ -1,6 +1,9 @@
 class AppEmailMailer < ApplicationMailer
-  default from: "collinlshelby@gmail.com" 
+  default from: "rawnchychero@comcast.net" 
 
-  def email
+  def email(user)
+    # @user = user
+    mail(to: user, subject: 'hello this is a test')
   end
+
 end
