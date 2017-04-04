@@ -40141,3 +40141,67 @@ AppEmailMailer#email: processed outbound mail in 12.4ms
 Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for ::1 at 2017-04-03 20:09:04 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (4.6ms)
+  Rendered home/_learn_center.html.erb (0.7ms)
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/_articles.html.erb (42.9ms)
+  Rendered home/_maincontent.html.erb (44.4ms)
+  Rendered home/_footer.html.erb (0.4ms)
+  Rendered home/index.html.erb within layouts/application (56.1ms)
+Completed 200 OK in 329ms (Views: 278.5ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/rails/mailers/app_email" for ::1 at 2017-04-03 20:09:12 -0700
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"internal"=>true, "path"=>"app_email"}
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/mailers/mailer.html.erb within layouts/application
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/mailers/mailer.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 353ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/mailers/app_email/email_preview" for ::1 at 2017-04-03 20:09:16 -0700
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"internal"=>true, "path"=>"app_email/email_preview"}
+  Rendering app_email_mailer/email.html.erb within layouts/mailer
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered app_email_mailer/email.html.erb within layouts/mailer (3.3ms)
+AppEmailMailer#email: processed outbound mail in 131.0ms
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/mailers/email.html.erb (3.5ms)
+Completed 200 OK in 149ms (Views: 7.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rails/mailers/app_email/email_preview?part=text%2Fhtml" for ::1 at 2017-04-03 20:09:16 -0700
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "internal"=>true, "path"=>"app_email/email_preview"}
+  Rendering app_email_mailer/email.html.erb within layouts/mailer
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered app_email_mailer/email.html.erb within layouts/mailer (2.4ms)
+AppEmailMailer#email: processed outbound mail in 12.5ms
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 16ms (Views: 1.7ms | ActiveRecord: 0.9ms)
+
+
