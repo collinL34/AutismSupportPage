@@ -2,7 +2,7 @@
 class AppEmailPreview < ActionMailer::Preview
 
   def email_preview
-    AppEmailMailer.email('rawnchychero@comcast.net')
+    AppEmailMailer.email('collinlshelby@gmail.com')
   end
 
 end
