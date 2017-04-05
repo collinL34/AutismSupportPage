@@ -247,9 +247,12 @@ body,
     border-radius: 18%;
     width: 350px;
     margin-left: 250px;
-    padding-top: 20px;
-    padding-bottom: 20px;
     text-align: center;
+}
+
+.categ-cord p li {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .article-link {
