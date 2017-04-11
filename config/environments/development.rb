@@ -16,7 +16,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     :address              => "smtp.gmail.com",
     :port                 => 587,
-    :domain              => 'autismtalks.info',
+    :domain               => 'autismtalks.info',
     :user_name            => ENV['EMAIL'],
     :password             => ENV['PASS'],
     :authentication       => "plain",
