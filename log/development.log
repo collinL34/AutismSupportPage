@@ -40508,3 +40508,429 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 115ms (Views: 88.3ms | ActiveRecord: 19.2ms)
 
 
+Started GET "/" for ::1 at 2017-04-10 22:28:51 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (24.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (3.4ms)
+  Rendered home/_learn_center.html.erb (0.5ms)
+  [1m[36mArticle Load (14.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mUser Load (13.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/_articles.html.erb (73.5ms)
+  Rendered home/_maincontent.html.erb (74.8ms)
+  Rendered home/_footer.html.erb (0.4ms)
+  Rendered home/index.html.erb within layouts/application (84.2ms)
+Completed 200 OK in 1089ms (Views: 995.2ms | ActiveRecord: 61.2ms)
+
+
+Started GET "/users/new" for ::1 at 2017-04-10 22:28:56 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 63ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-04-10 22:30:29 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CLyqINRTGYR2W+scCMu8avglzyAb8jALv5aMmcvHp6bhy6urqk8zaKuAebEoe6d3UYW0FzDKbEdjK57tFjpZTA==", "user"=>{"first_name"=>"Collin", "last_name"=>"Shelby", "address"=>"45 Cowper ave", "city"=>"Kensington", "state"=>"CA", "zip_code"=>"94707", "email"=>"collinlshelby@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (12.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "collinlshelby@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (12.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "address", "zip_code", "city", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["first_name", "Collin"], ["last_name", "Shelby"], ["email", "collinlshelby@gmail.com"], ["password_digest", "$2a$10$m6joj6sW1X3UX7YLdwJdEOOmnxRD4a0Aip.xEt6I88eUXxGEGHRjG"], ["address", "45 Cowper ave"], ["zip_code", 94707], ["city", "Kensington"], ["state", "CA"], ["created_at", 2017-04-11 05:30:29 UTC], ["updated_at", 2017-04-11 05:30:29 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+UserEmailMailer#welcome_email: processed outbound mail in 23.1ms
+Completed 500 Internal Server Error in 498ms (ActiveRecord: 25.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template user_email_mailer/welcome_email with "mailer". Searched in:
+  * "user_email_mailer"
+):
+  
+app/mailers/user_email_mailer.rb:4:in `welcome_email'
+app/controllers/users_controller.rb:25:in `create'
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/collinshelby/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (67.6ms)
+Started GET "/users/new" for ::1 at 2017-04-10 22:32:00 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-04-10 22:32:06 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Alr316Tq3ggDXpycVcYHiJwge18W80NWCZnlf+9P2ynrLfZc2vb05N6FDjF1dhyVNYAAaD3LHxrVJPcLMrIlww==", "user"=>{"first_name"=>"Collin", "last_name"=>"Shelby", "address"=>"45 Cowper ave", "city"=>"Kensington", "state"=>"CA", "zip_code"=>"94707", "email"=>"collinlshelby@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "collinlshelby@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 108ms (Views: 32.6ms | ActiveRecord: 1.0ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 14]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users/new" for ::1 at 2017-04-10 22:32:56 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 304ms (Views: 279.3ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/users" for ::1 at 2017-04-10 22:33:02 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qnmEaPKWnRs6pgfehDDBquuqYDUAKhZ++HnDqCSB7r5DDoXjjIq39+d9lXOkgNq3QgobAisSSjIkxNHc+XwQVA==", "user"=>{"first_name"=>"Collin", "last_name"=>"Shelby", "address"=>"45 Cowper ave", "city"=>"Kensington", "state"=>"CA", "zip_code"=>"94707", "email"=>"collinlshelby@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "collinlshelby@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "address", "zip_code", "city", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["first_name", "Collin"], ["last_name", "Shelby"], ["email", "collinlshelby@gmail.com"], ["password_digest", "$2a$10$ORIOfDqS6015ddnBOU0tLOatjDZWiCBz7INjSdPB6aYG2VNVMrjJy"], ["address", "45 Cowper ave"], ["zip_code", 94707], ["city", "Kensington"], ["state", "CA"], ["created_at", 2017-04-11 05:33:02 UTC], ["updated_at", 2017-04-11 05:33:02 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_email_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_email_mailer/welcome_email.html.erb within layouts/mailer (0.8ms)
+UserEmailMailer#welcome_email: processed outbound mail in 109.3ms
+Sent mail to collinlshelby@gmail.com (973.2ms)
+Date: Mon, 10 Apr 2017 22:33:02 -0700
+From: 'Collin' <ENV['EMAIL']>
+To: collinlshelby@gmail.com
+Message-ID: <58ec6a8eb2ed8_ba53fc0b97a422077738@collins-MacBook-Pro.local.mail>
+Subject: Welcome to Autism Talks!!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Hi Collin</h1>
+    <p>Thanks for signing up I hope you will enjoy the site!!</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+Redirected to http://localhost:3000/users/15
+Completed 302 Found in 1533ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/users/15" for ::1 at 2017-04-10 22:33:03 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  Rendered users/_user_navbar.html.erb (1.6ms)
+  Rendered users/_profile_img.html.erb (1.2ms)
+  [1m[36mUser Exists (2.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 15], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 15], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 95ms (Views: 56.2ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/logout" for ::1 at 2017-04-10 22:35:23 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-10 22:35:23 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (1.0ms)
+  Rendered home/_learn_center.html.erb (1.0ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/_articles.html.erb (36.9ms)
+  Rendered home/_maincontent.html.erb (38.3ms)
+  Rendered home/_footer.html.erb (0.6ms)
+  Rendered home/index.html.erb within layouts/application (45.8ms)
+Completed 200 OK in 109ms (Views: 78.6ms | ActiveRecord: 8.6ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 15]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users/new" for ::1 at 2017-04-10 22:35:38 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 310ms (Views: 279.9ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/users" for ::1 at 2017-04-10 22:35:52 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"54QROzCvksGYaVHxvcM/ktVElPAwH02Z/I7PvXSj/JsO8xCwTrO4LUWyw1ydcySPfOTvxxsnEdUgM93JqV4CcQ==", "user"=>{"first_name"=>"Collin", "last_name"=>"", "address"=>"", "city"=>"kensington", "state"=>"ca", "zip_code"=>"94707", "email"=>"collinlshelby@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "collinlshelby@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 130ms (Views: 40.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/new" for ::1 at 2017-04-10 22:36:17 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 58ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-04-10 22:36:20 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6kfOb3zb6Ml9c5ZM9mrv3htM/oukfQLVfi/Wd7rPA4UDMM/kAsfCJaCoBOHW2vTDsuyFvI9FXpmiksQDZzL9bw==", "user"=>{"first_name"=>"Collin", "last_name"=>"", "address"=>"", "city"=>"kensington", "state"=>"ca", "zip_code"=>"94707", "email"=>"collinlshelby@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "collinlshelby@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 39ms (Views: 34.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/new" for ::1 at 2017-04-10 22:36:55 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-04-10 22:36:58 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hK4TYu4sPwpKqe6G37PW68NrOUz2nFebV8f5oo2EgYpt2RLpkDAV5pdyfCv/A832astCe92kC9eLeuvWUHl/YA==", "user"=>{"first_name"=>"Collin", "last_name"=>"", "address"=>"", "city"=>"kensington", "state"=>"ca", "zip_code"=>"94707", "email"=>"collinlshelby@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "collinlshelby@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 35ms (Views: 31.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/new" for ::1 at 2017-04-10 22:37:08 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-04-10 22:37:12 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L7Q2mbhAmNyBRwc2dsGtP6wlwVTMdQry9R7Bg23PQjfGwzcSxlyyMFyclZtWcbYiBYW6Y+dNVr4po9P3sDK83Q==", "user"=>{"first_name"=>"Collin", "last_name"=>"", "address"=>"", "city"=>"kensington", "state"=>"ca", "zip_code"=>"94707", "email"=>"collinlshelby@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "collinlshelby@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 33ms (Views: 29.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for ::1 at 2017-04-10 22:37:22 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-04-10 22:37:24 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kf2KJUvWzNj3Yslh0m7ffn6I2ROIfPJxvTRnWeeE0/fAiouuNcrmNCq5W8zy3sRj1yiiJKNErj1hiXUtOnktHQ==", "user"=>{"first_name"=>"Collin", "last_name"=>"", "address"=>"", "city"=>"kensington", "state"=>"ca", "zip_code"=>"94707", "email"=>"collinlshelby@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "collinlshelby@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/new" for ::1 at 2017-04-10 22:37:38 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 31ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-04-10 22:37:40 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BM08qP7XNWlmoy/+3uZxTTzgqRVgSOQ4scfXgfx/qIbtuj0jgMsfhbt4vVP+VmpQlUDSIktwuHRtesX1IYJWbA==", "user"=>{"first_name"=>"Collin", "last_name"=>"", "address"=>"", "city"=>"kensington", "state"=>"ca", "zip_code"=>"94707", "email"=>"collinlshelby@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "collinlshelby@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 52ms (Views: 49.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for ::1 at 2017-04-10 22:37:50 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-04-10 22:37:52 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Or7FkrXAqZvfW6DgtgEKur096VUZppDuthUJ4BRb//vTycQZy9yDdwKAMk2WsRGnFJ2SYjKezKJqqBuUyaYBEQ==", "user"=>{"first_name"=>"Collin", "last_name"=>"", "address"=>"", "city"=>"kensington", "state"=>"ca", "zip_code"=>"94707", "email"=>"collinlshelby@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "collinlshelby@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 45ms (Views: 39.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for ::1 at 2017-04-10 22:38:21 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WDr+3e+MNBffKhf1lWHy0pz/2D7B2vjyIl0QND8/koaxTf9WkZAe+wLxhVi10enPNV+jCeripL7+4AJA4sJsbA==", "user"=>{"first_name"=>"Collin", "last_name"=>"shelby", "address"=>"", "city"=>"kensington", "state"=>"ca", "zip_code"=>"94707", "email"=>"collinlshelby@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "collinlshelby@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "address", "zip_code", "city", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["first_name", "Collin"], ["last_name", "shelby"], ["email", "collinlshelby@gmail.com"], ["password_digest", "$2a$10$/JMtjulIJiYu3q1Id/pztO.7hkvup.Lp6QRc5LFv3xUBy/2eSQJpC"], ["address", ""], ["zip_code", 94707], ["city", "kensington"], ["state", "ca"], ["created_at", 2017-04-11 05:38:21 UTC], ["updated_at", 2017-04-11 05:38:21 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_email_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_email_mailer/welcome_email.html.erb within layouts/mailer (0.5ms)
+UserEmailMailer#welcome_email: processed outbound mail in 140.7ms
+Sent mail to collinlshelby@gmail.com (2063.8ms)
+Date: Mon, 10 Apr 2017 22:38:22 -0700
+From: Collincollinlshelby@gmail.com
+To: collinlshelby@gmail.com
+Message-ID: <58ec6bce285ef_c2b3fce61fa461847263@collins-MacBook-Pro.local.mail>
+Subject: Welcome to Autism Talks!!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Hi Collin</h1>
+    <p>Thanks for signing up I hope you will enjoy the site!!</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+Redirected to http://localhost:3000/users/16
+Completed 302 Found in 2616ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/users/16" for ::1 at 2017-04-10 22:38:24 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendered users/_user_navbar.html.erb (2.5ms)
+  Rendered users/_profile_img.html.erb (1.3ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 LIMIT $2[0m  [["user_id", 16], ["LIMIT", 1]]
+  [1m[36mArticle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."author_id" = $1 LIMIT $2[0m  [["author_id", 16], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 82ms (Views: 45.6ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/logout" for ::1 at 2017-04-10 22:39:51 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-10 22:39:51 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_navbar.html.erb (0.9ms)
+  Rendered home/_learn_center.html.erb (0.5ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/_articles.html.erb (27.2ms)
+  Rendered home/_maincontent.html.erb (28.4ms)
+  Rendered home/_footer.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 67ms (Views: 61.0ms | ActiveRecord: 2.2ms)
+
+
