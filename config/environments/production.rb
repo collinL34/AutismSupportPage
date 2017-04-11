@@ -15,7 +15,7 @@ Rails.application.configure do
     :address              => "smtp.gmail.com",
     :port                 => 587,
     :domain              => 'autism-talks.herokuapp.com',
-    :user_name            => ENV['USER'],
+    :user_name            => ENV['EMAIL'],
     :password             => ENV['PASS'],
     :authentication       => "plain",
     :enable_starttls_auto => true
