@@ -3,7 +3,9 @@
 Webiste for autistic children and their parents
 
 Introduction: 
-  This website is for the friends and family of autistic children. To help inform them of how to help better support their children learning. This website is based off of the idea that family and friends can speak and share stories and advice about their own experiences for others to read or contact them if they choose to allow it. Or the users can post anonymously, if they choose too. The hope with this website is to have a place for those who are struggling with autism to have a place to openly speak about their stories and find helpful information to help better their's and their friends and families lives.
+  Autism Talks is a website for allies of those with autism and who wish to find and share useful information they have found   
+about autism.This is a site made to help inform the families and friends so they may inform themselves to help the people 
+they love that are autistic.I hope you make find the information shared useful and enjoy your time!
 
 Main Key features of WebPage/ users stories
 
@@ -21,10 +23,10 @@ Site Tech Stack
   - PostGres db
   - Heroku
   - Travis Ci
-  - Rails Rspec testing
+  - Rails Rspec
   - Javascript
   - Material Design for Bootstrap 4 & 3
-  - Html 5 && css 3
+  - HTML 5 & CSS 3
   - Bootstrap 4
   
 Home Page Design
@@ -34,6 +36,7 @@ Home Page Design
   - Shows current articles
   - Has links and description of other autism support websites
   - Has Description about the autismtalks website
+  - Has description along with photo about Autism
   
 Users Show Page
 
@@ -42,9 +45,6 @@ Users Show Page
   - Users friends list
   - users full name and link to edit their personal info
   
-Users Post Page
-
-  - Link and image corresponding to link or article
   
   
   
