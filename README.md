@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/collinL34/AutismSupportPage.svg?branch=development)](https://travis-ci.org/collinL34/AutismSupportPage)
-# AutismSupportPage
+[![Build Status](https://travis-ci.org/collinL34/AutismSupportPage.svg?branch=development)](https://travis-ci.org/collinL34/AutismSu
+# Autism
 Webiste for autistic children and their parents
 
 Introduction: 
