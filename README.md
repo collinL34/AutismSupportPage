@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/collinL34/AutismSupportPage.svg?branch=development)](https://travis-ci.org/collinL34/AutismSupportPage)
+[![Build Status](https://travis-ci.org/collinL34/AutismTalks.svg?branch=master)](https://travis-ci.org/collinL34/AutismTalks)
 # AutismTalks
 Webiste for autistic children and their parents
 
