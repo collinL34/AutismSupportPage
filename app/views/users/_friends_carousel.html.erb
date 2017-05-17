@@ -11,10 +11,8 @@
           <% end %>
 
         </ol>
-        <!-- Carousel Slides / Quotes -->
         <div class="carousel-inner">
 
-        <!-- first friend -->
         <div class="item active">
           <div class="row">
             <div class="col-sm-12">
@@ -27,7 +25,6 @@
         </div>
 
         <% @friends.reject { |friend| @friends.index(friend) == 0 }.each do |friend|%>
-          <!-- rest of friends -->
           <div class="item">
             <div class="row">
                 <div class='card' id='friend-card'>

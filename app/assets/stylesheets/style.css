@@ -75,13 +75,13 @@ body,
 .new-card {
     position: relative;
     margin-top: 50px;
-    height: 150px;
+    height: 450px;
 }
 
 .new-user-card {
     position: relative;
     margin-top: 50px;
-    height: 650px;
+    height: 750px;
 }
 
 .new-card .form-control {
@@ -165,11 +165,20 @@ body,
 }
 
 .login-card {
-    height: 300px;
+    padding-top: 10px;
+    height: 250px;
 }
 
 .login-card .txt {
     font-size: 15px;
+}
+
+.new-article-card {
+    height: 250px;
+}
+
+.new-article-card .txt {
+    font-size: 18px;
 }
 
 #articles-carousel {
@@ -189,7 +198,7 @@ body,
 }
 
 #articles-carousel .card {
-    height: 140px;
+    height: 200px;
 }
 
 #friends-carousel #indicators {

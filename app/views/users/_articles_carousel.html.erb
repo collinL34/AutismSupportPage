@@ -22,6 +22,7 @@
                 <div class='card'>
                   <img src="<%= @articles.first.image_link%>" class='article-img'>
                   <small><strong><a href="<%=@articles.first.link%>"> <%= @articles.first.title%> </a> </strong></small>
+                  <p class='green-text'><%= @articles.first.body%></p>
                 </div>
               </div>
             </div>
@@ -35,6 +36,7 @@
                 <div class='card'>
                   <img src="<%= article.image_link%>" class='article-img'>
                   <small><strong><a href="<%=article.link%>"> <%= article.title%> </a> </strong></small>
+                  <p class='green-text'><%= article.body%></p>
                 </div>
               </div>
             </div>

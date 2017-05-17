@@ -17,12 +17,12 @@ class ArticlesController < ApplicationController
     img = Article.img_grabber(obj)
     categ = Category.find(params[:article][:category_id])
 
-    @article  = Article.new(title: title, category_id: categ.id, image_link: img, author_id: session[:user_id], link: params[:article][:link])
+    @article  = Article.new(title: title, body: params[:body], category_id: categ.id, image_link: img, author_id: session[:user_id], link: params[:article][:link])
 
     if @article.save
       redirect_to :root
     else
-      p @article.errors.messages
+      @article.errors.messages
       redirect_to :back
     end
   end
