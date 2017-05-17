@@ -3,7 +3,7 @@
 <!--Card-->
 <div class='container profile-container wow'>
   <div class="card testimonial-card user">
-      <h4><%= @user.full_name%></h4>
+      <h4 class="blue-text"><%= @user.full_name%></h4>
 
       <% if !@user.profile_img.nil? %>
         <div class="avatar">
@@ -15,18 +15,18 @@
       <% end %>
 
         <div class="divider-new">
-          <h2 class="h2-responsive wow fadeInDown">Friends</h2>
+          <h2 class="h2-responsive wow fadeInDown orange-text">Friends</h2>
         </div>
 
       <% if !@friends.empty? %>
         <%= render :partial => 'friends_carousel' %>
       <% else %>
-        <p>Sorry no friends maybe go make some</p>
+        <p class="purple-text">Sorry no friends maybe go make some</p>
       <% end %>
         
 
       <div class="divider-new">
-        <h2 class="h2-responsive wow fadeInDown">Articles</h2>
+        <h2 class="h2-responsive wow fadeInDown yellow-text">Articles</h2>
       </div>
 
       <% if !@articles.empty?%>
@@ -37,7 +37,7 @@
       <% end %>
 
       <div class="divider-new">
-          <h2 class="h2-responsive wow fadeInDown">Edit Your Profile</h2>
+          <h2 class="h2-responsive wow fadeInDown red-text">Edit Your Profile</h2>
       </div>
 
       <%= link_to 'Edit Profile', edit_user_path(@user), class: 'btn btn-primary btn-lg secondary-color'%>
@@ -45,7 +45,7 @@
 
       <% if @user.id != session[:user_id] %>
         <div class="divider-new">
-            <h2 class="h2-responsive wow fadeInDown">Add as Friend</h2>
+            <h2 class="h2-responsive wow fadeInDown green-text">Add as Friend</h2>
         </div>
 
         <%= form_for @friendship do |f| %>

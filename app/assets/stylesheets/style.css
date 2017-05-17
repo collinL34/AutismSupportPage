@@ -72,16 +72,19 @@ body,
     height: 330px;
 }
 
-.new-card {
+.profile-img-card {
     position: relative;
     margin-top: 50px;
-    height: 450px;
+    height: 150px;
+    width: 800px;
+    margin-left: 150px;
 }
 
 .new-user-card {
     position: relative;
     margin-top: 50px;
     height: 750px;
+    padding-top: 20px;
 }
 
 .new-card .form-control {
@@ -157,7 +160,7 @@ body,
 
 .testimonial-card {
     text-align: center;
-    height: 1600px;
+    height: 1400px;
 }
 
 .carousel-item .testimonial-card {
@@ -359,5 +362,7 @@ body,
     margin-top: -30px;
 }
 
-
+.footer-copyright {
+    text-align: center;
+}
 
