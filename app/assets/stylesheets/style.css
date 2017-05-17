@@ -242,6 +242,11 @@ body,
     width: 100%;
 }
 
+.footer-break {
+    margin-bottom: -20px;
+}
+
+
 .footer-col-md-6 ul {
     margin-left: 388px;
 }
