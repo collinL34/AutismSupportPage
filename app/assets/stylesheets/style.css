@@ -239,19 +239,10 @@ body,
 }
 
 .page-footer {
-    left: 0;
-    right: 0;
     width: 100%;
 }
 
-.useful-links {
-    margin-left: 30px;
-    text-align: center;
-}
-
-.links {
-    text-align: center;
-}
+.links {}
 
 .categ-card .card {
     background-color: #3F729B;
