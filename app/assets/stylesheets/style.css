@@ -242,7 +242,9 @@ body,
     width: 100%;
 }
 
-.links {}
+.footer-col-md-6 ul {
+    margin-left: 388px;
+}
 
 .categ-card .card {
     background-color: #3F729B;
