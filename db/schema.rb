@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20170202204327) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "articles", force: :cascade do |t|
     t.string   "link"
     t.string   "body"
