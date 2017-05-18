@@ -1,0 +1,18 @@
+<div class='container wow'> 
+    <h4 style='text-align: center'>Add Your Article Today!</h4>
+    <div class="card wow fadeInRight login-card">
+        <div class="card-block">
+
+          <%= form_for @article, class: 'mg-form' do |f| %>
+              <%= f.text_field :link, placeholder: 'article link' %>
+              <div class="btn-group">
+                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</button>
+                  <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {:class=>'dropdown-menu'})%>
+              </div>
+              <%= f.submit "Submit",class: "btn btn-primary btn-lg warning-color" %>
+              <%= link_to 'Home', :root, class: 'btn btn-lg btn-primary'%>
+          <% end %>
+        </div>
+    </div>
+
+</div>

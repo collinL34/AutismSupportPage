@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="col-md-10">
+      <div class="carousel slide" data-ride="carousel" id="articles">
+      
+          <!-- Bottom Carousel Indicators -->
+          <ol id='indicators' class="carousel-indicators">
+            <li data-target="#articles" data-slide-to="0" class="active fa fa-rocket"></li>
+
+            <% @articles.reject { |article| @articles.index(article) == 0 }.each do |article|%>
+              <li data-target="#articles" data-slide-to="<%= @articles.index(article) %>" class='fa fa-rocket'></li>
+            <% end %>
+          </ol>
+                  
+          <!-- Carousel Slides / Quotes -->
+          <div class="carousel-inner">
+
+          <!-- first article 1 -->
+          <div class="item active">
+            <div class="row">
+              <div class="col-sm-10">
+                <div class='card carder'>
+                <section class="image-links">
+
+                  <%= link_to "Posted by: #{@articles.first.author.full_name}", user_path(@articles.first.author.id), class: 'green-text art-author' %>
+
+                  <img src="<%= @articles.first.image_link%>" class='article-img' alt="First sample avatar image">
+                  <small><strong><a href="<%=@articles.first.link%>"> <%= @articles.first.title%> </a> </strong></small>
+                </section>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <% @articles.reject { |article| @articles.index(article) == 0 }.each do |article|%>
+          <!-- rest of articles -->
+          <div class="item">
+            <div class="row">
+              <div class="col-sm-10 articles-car">
+                <div class='card carder'>
+                <section class="image-links">
+
+                  <%= link_to "Posted by: #{article.author.full_name}", user_path(article.author.id), class: 'green-text art-author' %>
+
+                  <img src="<%= article.image_link%>" class='article-img' alt="First sample avatar image">
+                  <small><strong><a href="<%=article.link%>"> <%= article.title%> </a> </strong></small>
+                  <div class='row'>
+                  </div>
+                </section>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        <% end %>
+          
+        </div>
+      </div>                          
+    </div>
+</div>

@@ -1,0 +1,354 @@
+html,
+body,
+
+.view {
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .full-bg-img,
+    .view {
+        height: auto;
+        position: relative;
+    }
+}
+
+.navbar {
+    background-color: transparent;
+    text-align: right;
+}
+
+.top-nav-collapse {
+    background-color: #1C2331;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #1C2331;
+    }
+}
+
+.description {
+    padding-top: 25%;
+    padding-bottom: 3rem;
+    color: #fff
+}
+
+@media (max-width: 992px) {
+    .description {
+        padding-top: 7rem;
+        text-align: center;
+    }
+}
+
+.fa-check {
+    color: green;
+}
+
+.full-bg-img {
+    position: absolute;
+}
+
+.full-bg-img,
+.view .content,
+.view .mask {
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.view {
+    background: url("autism-img.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.card-block {
+    padding: 1.25rem;
+    height: 330px;
+}
+
+.new-card {
+    position: relative;
+    margin-top: 50px;
+    height: 150px;
+}
+
+.new-user-card {
+    position: relative;
+    margin-top: 50px;
+    height: 650px;
+}
+
+.new-card .form-control {
+    font-size: 15px;
+}
+
+.new-user-card .form-control {
+    font-size: 15px;
+}
+
+.card img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.card img,
+.img-fluid,
+.section .view,
+.section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.full-bg-img {
+    position: absolute;
+}
+
+.full-bg-img,
+.view .content,
+.view .mask {
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#icons-list {
+    padding-top: 40px;
+}
+
+.home-card {
+    height: 200px;
+    width: 220px;
+    margin-top: 200px;
+    margin-left: 200px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.home-card p {
+    background-color: #ff4444;
+}
+
+.home-card button {
+    margin-top: 70px;
+}
+
+.new-form {
+    text-align: center;
+}
+
+.avatar .profile {
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 440px;
+    width: 250px;
+    height: 250px;
+}
+
+.testimonial-card {
+    text-align: center;
+    height: 1600px;
+}
+
+.carousel-item .testimonial-card {
+    height: 200px;
+}
+
+.login-card {
+    height: 300px;
+}
+
+.login-card .txt {
+    font-size: 15px;
+}
+
+#articles-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#articles #indicators .active {
+    color: red;
+}
+
+#articles-carousel img {
+    margin-left: 460px;
+    width: 200px;
+    height: auto;
+}
+
+#articles-carousel .card {
+    height: 140px;
+}
+
+#friends-carousel #indicators {
+    margin-left: 10px;
+    margin-bottom: -20px;
+}
+
+#friends-carousel #indicators .active {
+    color: purple;
+}
+
+#articles-carousel #indicators {
+    margin-left: 10px;
+    margin-bottom: -20px;
+}
+
+#articles-carousel #indicators .active {
+    color: blue;
+}
+
+#indicators {
+    margin-left: 200px;
+    bottom: -10px;
+}
+
+#friend-img {
+    margin-left: 450px;
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+}
+
+.page-footer .row {
+    margin-left: 200px;
+}
+
+.page-footer {
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.useful-links {
+    margin-left: 30px;
+    text-align: center;
+}
+
+.links {
+    text-align: center;
+}
+
+.categ-card .card {
+    background-color: #3F729B;
+    margin-top: 100px;
+    border-radius: 18%;
+    width: 350px;
+    margin-left: 250px;
+    text-align: center;
+}
+
+.categ-cord p li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.article-link {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+#testimonials .article-link {
+    margin-left: 530px;
+}
+
+#search {
+    width: 200px;
+    font-size: 15px;
+}
+
+.carder {
+    text-align: center;
+    width: 550px;
+    height: 380px;
+    margin-left: 300px;
+}
+
+.carder img {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-left: 100px;
+    width: 300px;
+    height: auto;
+}
+
+#indicators {
+    padding-left: 290px;
+}
+
+.image-links {
+    text-align: center;
+}
+
+.about-image {
+    width: 500px;
+    border-radius: 10px;
+    height: auto;
+}
+
+.learn-cards p {
+    font-size: 15px;
+}
+
+.learn-cards img {
+    width: 800px;
+    height: 200px;
+}
+
+.autism-society {
+    margin-top: -50px;
+}
+
+.autism-res-links {
+    margin-top: -50px;
+}
+
+.about-aut {
+    font-size: 15px;
+}
+
+.about p {
+    font-size: 15px;
+}
+
+#articles .card {
+    height: 350px;
+    text-align: center;
+}
+
+#articles img {
+    margin-top: 30px
+}
+
+.art-author {
+    margin-left: -50px;
+}
+
+.user h4 {
+    margin-right: 30px;
+}
+
+.user {
+    margin-top: 70px;
+}
+
+.description {
+    margin-top: -30px;
+}
+
+
+

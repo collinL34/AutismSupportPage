@@ -2,6 +2,22 @@
 
 one:
   first_name: MyString
+  last_name: MyString
+  address: MyString
+  zip_code: 1
+  city: MyString
+  state: MyString
+  apt: 1
+  images: MyString
+  bio: MyString
 
 two:
   first_name: MyString
+  last_name: MyString
+  address: MyString
+  zip_code: 1
+  city: MyString
+  state: MyString
+  apt: 1
+  images: MyString
+  bio: MyString

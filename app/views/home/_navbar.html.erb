@@ -1,0 +1,29 @@
+<nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
+	<div class="container">
+		<!--Links-->
+		<a class="navbar-brand purple-text" href="/">Autism Talks</a>
+		<ul class="nav navbar-nav">
+				<li class="nav-item">
+						<a class="nav-link red-text" href="#best-features">Learn</a>
+				</li>
+				<li class="nav-item">
+						<a class="nav-link yellow-text" href="#testimonials">Articles</a>
+				</li>
+				<li>
+				<% if session[:user_id] %>
+						<li><%= link_to 'Logout', :logout, class: 'green-text'%></li>
+						<li><%= link_to 'Profile', User.find(session[:user_id]), class: 'yellow-text'%></li>
+				<% else %>
+						<li><%= link_to 'Log In Now!', :login, class: 'blue-text' %></li>
+						<li><%= link_to 'Sign Up Now!', :new_user, class: 'purple-text' %></li>
+				<% end %>
+
+		</ul>
+								<!--Search form-->
+		<%= form_tag(root_path, :method => "get", id: "search-form", class:"form-inline float-lg-right") do %>
+				<%= text_field_tag :search, params[:search], placeholder: "Search Categories", class:"form-control green-text search" %>
+				<%= submit_tag "Search", :name => nil, class: 'btn btn-danger btn-sm' %>
+		<% end %>
+
+	</div>
+</nav>

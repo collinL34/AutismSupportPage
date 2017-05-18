@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="carousel slide" data-ride="carousel" id="friends-carousel">
+        <!-- Bottom Carousel Indicators -->
+        <ol id='indicators' class="carousel-indicators">
+          <li data-target="#friends-carousel" data-slide-to="0" class="active fa fa-rocket"></li>
+
+          <% @friends.reject { |friend| @friends.index(friend) == 0 }.each do |friend|%>
+            <li data-target="#friends-carousel" data-slide-to="<%= @friends.index(friend) %>" class='fa fa-rocket'></li>
+          <% end %>
+
+        </ol>
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
+
+        <!-- first friend -->
+        <div class="item active">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class='card' id='friend-card'>
+                <img src="<%= @friends.first.profile_img%>" id='friend-img'>
+                <h3><a href="<%= user_path(@friends.first)%>"> <%= @friends.first.full_name%> </a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <% @friends.reject { |friend| @friends.index(friend) == 0 }.each do |friend|%>
+          <!-- rest of friends -->
+          <div class="item">
+            <div class="row">
+                <div class='card' id='friend-card'>
+                  <div class="col-sm-12 articles-car">
+                  <% if !friend.profile_img.nil? %>
+                    <img src="<%= friend.profile_img%>" id='friend-img'>
+                  <% else %>
+                    <h2>No Image</h2>
+                  <% end %>
+
+                  <h3><a href="<%= user_path(friend)%>"> <%= friend.full_name%> </a></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <% end %>
+          
+        </div>
+      </div>                          
+    </div>
+  </div>
+</div>
+
+

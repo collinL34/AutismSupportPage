@@ -1,0 +1,28 @@
+<div class="col-lg-6">
+    <div class="description wow">
+        <h2 class="orange-text h2-responsive wow fadeInLeft">Welcome to Autism Talks</h2>
+        <hr class="hr-dark">
+        <p class="wow fadeInLeft red-text" data-wow-delay="0.4s" style='font-size: 17px;'>This is a site that was made to help inform the families and friends so they may inform themselves to help the people they love that are autistic.</p>
+        <br>
+        <a href='#best-features' class="btn btn-primary wow fadeInLeft learn-button" data-wow-delay="0.7s">Learn more</a>
+    </div>
+</div>
+<div class="col-lg-6 categ-card">
+  <div class='card'>
+    <% if !@category.nil? && @category.name != 'Category'%>
+
+      <% if @category.articles.empty? %>
+        <p class='amber-text'>There are no articles posted under this category. Maybe you want to post one?</p>
+      <% else %>
+
+        <ul>
+          <% @category.articles.each do |article| %>
+            <li class='article-link'><a href='<%= article.link %>' class='amber-text'><%= article.title %></a></li>
+          <%end %>
+        </ul>
+
+      <%end%>
+      
+    <% end %>
+  </div>
+</div>
